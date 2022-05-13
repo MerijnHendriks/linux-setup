@@ -23,6 +23,9 @@ sudo ./install.sh
 # cleanup
 cd ..
 rm linux setup
+
+# reboot to get into shell
+sudo reboot
 ```
 
 ## Wiki
