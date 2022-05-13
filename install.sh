@@ -73,7 +73,5 @@ cd ..
 rm -rf fluent-icon-theme
 
 ## windows 10 sounds
-cd linux-setup
 mkdir -p .local/share/sounds
 tar -xf msaudio.tar.xz -C .local/share/sounds
-cd ..
