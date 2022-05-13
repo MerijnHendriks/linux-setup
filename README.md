@@ -54,27 +54,6 @@ sudo nano /etc/default/grub
 sudo grub-update
 ```
 
-#### Gnome Shell
-
-- Panel > Help > Unpin
-
-#### Gnome Tweaks
-
-- Appearance > Cursor > Yaru
-- Appearance > Icons > Fluent-dark
-- Appearance > Shell > Fluent-round-dark
-- Appearance > Background > Image > `$HOME/Pictures/Wallpapers/wallpaper.png
-- Appearance > Lock Screen > Image > `$HOME/Pictures/Wallpapers/wallpaper.png
-- Fonts > Interface Text > Inter Regular 11
-- Fonts > Document Text > Inter Regular 11
-- Fonts > Legacy Window Titles > Inter Regular 11
-- Fonts > Antialiasing > Subpixel
-- Keyboard And Mouse > Mouse > Middle Click Paste > Off
-- Keyboard And Mouse > Touchpad > Mouse Click Emulation > Area
-- Top bar > Clock > Date > Off
-- Window Titlebars > Maximize > On
-- Window Titlebars > Minimize > On
-
 #### Gnome extensions
 
 **Name**          | **Link**
@@ -97,3 +76,30 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 ##### Just Perfection
 
 - workspaces app grid: off
+
+#### Gnome Shell
+
+- Panel > Help > Unpin
+
+#### Gnome Tweaks
+
+- Appearance > Cursor > Yaru
+- Appearance > Icons > Fluent-dark
+- Appearance > Shell > Fluent-round-dark
+- Appearance > Background > Image > `$HOME/Pictures/Wallpapers/wallpaper.png
+- Appearance > Lock Screen > Image > `$HOME/Pictures/Wallpapers/wallpaper.png
+- Fonts > Interface Text > Inter Regular 11
+- Fonts > Document Text > Inter Regular 11
+- Fonts > Legacy Window Titles > Inter Regular 11
+- Fonts > Antialiasing > Subpixel
+- Keyboard And Mouse > Mouse > Middle Click Paste > Off
+- Keyboard And Mouse > Touchpad > Mouse Click Emulation > Area
+- Top bar > Clock > Date > Off
+- Window Titlebars > Maximize > On
+- Window Titlebars > Minimize > On
+
+#### WPS
+
+- Settings > Skin Center > Comfort
+- Ribbon > Hamburger > Ribbon Button Centered > On
+- Ribbon > Hamburger > Ribbon Classic Menu > Off
