@@ -73,5 +73,5 @@ cd ..
 rm -rf fluent-icon-theme
 
 ## windows 10 sounds
-mkdir -p .local/share/sounds
-tar -xf msaudio.tar.xz -C .local/share/sounds
+mkdir -p ../.local/share/sounds
+tar -xf msaudio.tar.xz -C ../.local/share/sounds
