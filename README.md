@@ -22,10 +22,10 @@ sudo ./install.sh
 
 # cleanup
 cd ..
-rm linux setup
+sudo rm -rf linux-setup
 
-# reboot to get into shell
-sudo reboot
+# restart into shell
+reboot
 ```
 
 ## Wiki
