@@ -23,6 +23,8 @@ rm linux setup
 
 ## Upgrade image from 20.04 mini.iso
 
+Mini iso: [link](https://mirrors.edge.kernel.org/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot)
+
 ```
 sudo do-release-upgrade -d
 sudo apt purge gcc-10-base libffi7 libfuse2 ltrace popularity-contest tasksel laptop-detect
