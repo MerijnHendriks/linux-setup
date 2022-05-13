@@ -54,6 +54,12 @@ sudo nano /etc/default/grub
 sudo grub-update
 ```
 
+#### Gnome Tweaks
+
+- Appearance > Cursor > Yaru
+- Appearance > Icons > Fluent-dark
+- Appearance > Shell > Fluent-round-dark
+
 #### Gnome extensions
 
 **Name**          | **Link**
@@ -76,7 +82,3 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 ##### Just Perfection
 
 - workspaces app grid: off
-
-##### User Themes
-
-- Fluent-round-dark
