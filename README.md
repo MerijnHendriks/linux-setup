@@ -64,3 +64,19 @@ dash to panel     | [link](https://extensions.gnome.org/extension/1160/dash-to-p
 impatience        | [link](https://extensions.gnome.org/extension/277/impatience)
 just perfection   | [link](https://extensions.gnome.org/extension/3843/just-perfection)
 user themes       | [link](https://extensions.gnome.org/extension/19/user-themes)
+
+##### Dash To Panel
+
+- position > thickness: 32
+- position > left box > off
+- position > middle box > off
+- style > app icon margin > 2
+- style > app icon padding > 6
+
+##### Just Perfection
+
+- workspaces app grid: off
+
+##### User Themes
+
+- Fluent-round-dark
