@@ -1,6 +1,6 @@
 # linux-setup
 
-My linux system install script
+My linux system install script and more
 
 ## Script usage
 
