@@ -86,6 +86,7 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 - Appearance > Cursor > Yaru
 - Appearance > Icons > Fluent-dark
 - Appearance > Shell > Fluent-round-dark
+- Appearance > Sound > Windows_10_sounds
 - Appearance > Background > Image > `$HOME/Pictures/Wallpapers/wallpaper.png
 - Appearance > Lock Screen > Image > `$HOME/Pictures/Wallpapers/wallpaper.png
 - Fonts > Interface Text > Inter Regular 11
