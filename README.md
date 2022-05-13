@@ -65,7 +65,7 @@ impatience        | [link](https://extensions.gnome.org/extension/277/impatience
 just perfection   | [link](https://extensions.gnome.org/extension/3843/just-perfection)
 user themes       | [link](https://extensions.gnome.org/extension/19/user-themes)
 
-##### Dash To Panel
+##### Dash to panel
 
 - position > thickness: 32
 - position > left box > Off
@@ -73,15 +73,15 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 - style > app icon margin > 2
 - style > app icon padding > 6
 
-##### Just Perfection
+##### Just perfection
 
 - workspaces app grid: off
 
-#### Gnome Shell
+#### Gnome shell
 
 - Panel > Help > Unpin
 
-#### Gnome Tweaks
+#### Gnome tweaks
 
 - Appearance > Cursor > Yaru
 - Appearance > Icons > Fluent-dark
@@ -99,8 +99,26 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 - Window Titlebars > Maximize > On
 - Window Titlebars > Minimize > On
 
+#### Gnome web
+
+- General > Homepage > Blank page
+- General > Search engine > Add search engine...
+
+```
+Name: Searx
+Address: https://searx.be/search?q=%s
+```
+
+- General > Check spelling > Off
+
 #### WPS
 
 - Settings > Skin Center > Comfort
 - Ribbon > Hamburger > Ribbon Button Centered > On
 - Ribbon > Hamburger > Ribbon Classic Menu > Off
+
+### Atom extensions
+
+**Name**                | **Link**
+----------------------- | -----------------------------------------------------------------------
+platformio-ide-terminal | [link](https://atom.io/packages/platformio-ide-terminal)
