@@ -54,6 +54,10 @@ sudo nano /etc/default/grub
 sudo grub-update
 ```
 
+#### Gnome Shell
+
+- Panel > Help > Unpin
+
 #### Gnome Tweaks
 
 - Appearance > Cursor > Yaru
