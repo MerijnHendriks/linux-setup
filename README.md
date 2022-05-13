@@ -42,7 +42,7 @@ sudo nano /etc/default/grub
 sudo grub-update
 ```
 
-### Gnome extentions
+### Gnome extensions
 
 **Name**          | **Link**
 ----------------- | -----------------------------------------------------------------------
