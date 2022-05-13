@@ -77,9 +77,7 @@ mkdir -p ../.local/share/sounds
 tar -xf msaudio.tar.xz -C ../.local/share/sounds
 
 ## personalization
-
 mkdir -p ../Pictures/Avatar
 cp avatar.png ../Pictures/Avatars
-
 mkdir -P ../Pictures/Wallpapers
 cp wallpaper.png ../Pictures/Wallpapers
