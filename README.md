@@ -46,8 +46,8 @@ sudo grub-update
 **Name**          | **Link**
 ----------------- | -----------------------------------------------------------------------
 appindicator      | [link](https://extensions.gnome.org/extension/615/appindicator-support)
-blur my shell     | [link(https://extensions.gnome.org/extension/3193/blur-my-shell)
+blur my shell     | [link](https://extensions.gnome.org/extension/3193/blur-my-shell)
 dash to panel     | [link](https://extensions.gnome.org/extension/1160/dash-to-panel)
 impatience        | [link](https://extensions.gnome.org/extension/277/impatience)
-just perfection   | [link(https://extensions.gnome.org/extension/3843/just-perfection)
+just perfection   | [link](https://extensions.gnome.org/extension/3843/just-perfection)
 user themes       | [link](https://extensions.gnome.org/extension/19/user-themes)
