@@ -2,15 +2,12 @@
 
 My linux system install script and more
 
-## Setup
+## Scrips usage
 
 ```sh
+# install requirements
 sudo apt install git
-```
 
-## Install script
-
-```sh
 # download script
 git clone https://github.com/merijnhendriks/linux-setup
 cd linux-setup
@@ -28,7 +25,9 @@ cd ..
 rm linux setup
 ```
 
-## Upgrade image from 20.04 mini.iso
+## Wiki
+
+### Upgrade image from 20.04 mini.iso
 
 Mini iso: [link](https://mirrors.edge.kernel.org/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot)
 
@@ -40,9 +39,9 @@ Mini iso: [link](https://mirrors.edge.kernel.org/ubuntu/dists/focal/main/install
 sudo do-release-upgrade -d
 ```
 
-## Customization
+### Customization
 
-### Boot show startup logs
+#### Boot show startup logs
 
 ```sh
 sudo nano /etc/default/grub
@@ -52,7 +51,7 @@ sudo nano /etc/default/grub
 sudo grub-update
 ```
 
-### Gnome extensions
+#### Gnome extensions
 
 **Name**          | **Link**
 ----------------- | -----------------------------------------------------------------------
