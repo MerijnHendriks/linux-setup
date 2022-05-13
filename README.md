@@ -123,5 +123,4 @@ Address: https://searx.be/search?q=%s
 ----------------------- | -----------------------------------------------------------------------
 atom-mermaid            | [link](https://atom.io/packages/atom-mermaid)
 git-log                 | [link](https://atom.io/packages/git-log)
-platformio-ide-terminal | [link](https://atom.io/packages/platformio-ide-terminal)
-teletype                | [link](https://atom.io/packages/teletype)
+platformio-ide-terminal | [link](https://atom.io/packages/platformio-ide-terminal)]
