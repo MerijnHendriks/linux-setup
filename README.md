@@ -81,6 +81,12 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 
 - Panel > Help > Unpin
 
+#### Gnome settings
+
+- Appearance > Dark
+- Multitask > General > Hot Corners > Off
+- Mouse > Touchpad > Tap To Click > On
+
 #### Gnome tweaks
 
 - Appearance > Cursor > Yaru
