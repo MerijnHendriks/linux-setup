@@ -37,7 +37,8 @@ sudo apt purge gcc-10-base libffi7 libfuse2 ltrace popularity-contest tasksel la
 ```sh
 sudo nano /etc/default/grub
 # remove "quiet" option from cmd
-# ctrl-x
+# press ctrl-s
+# press ctrl-x
 sudo grub-update
 ```
 
