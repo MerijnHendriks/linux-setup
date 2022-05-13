@@ -2,22 +2,29 @@
 
 My linux system install script and more
 
-## Script usage
+## Setup
 
 ```sh
-# install requirements
 sudo apt install git
+```
 
+## Install script
+
+```sh
 # download script
 git clone https://github.com/merijnhendriks/linux-setup
-
-# run it
 cd linux-setup
+
+# cleanup 20.04 mini iso migration
+chmox +x migration.sh
+sudo ./migration.sh
+
+# install software
 chmox +x install.sh
 sudo ./install.sh
-cd ..
 
 # cleanup
+cd ..
 rm linux setup
 ```
 
@@ -25,9 +32,12 @@ rm linux setup
 
 Mini iso: [link](https://mirrors.edge.kernel.org/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot)
 
+1. install base system
+2. enter new install (press `ctrl+alt+f2`)
+3. upgrade system
+
 ```
 sudo do-release-upgrade -d
-sudo apt purge gcc-10-base libffi7 libfuse2 ltrace popularity-contest tasksel laptop-detect
 ```
 
 ## Customization
