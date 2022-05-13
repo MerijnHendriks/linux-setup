@@ -49,6 +49,9 @@ rm steam.deb
 
 # Customization
 
+## dependencies
+apt install -y libsass1
+
 ## fonts
 apt install -y fonts-inter
 
