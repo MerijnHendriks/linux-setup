@@ -135,7 +135,7 @@ Address: https://searx.be/search?q=%s
 - Ribbon > Hamburger > Ribbon Button Centered > On
 - Ribbon > Hamburger > Ribbon Classic Menu > Off
 
-### Atom extensions
+#### Atom extensions
 
 **Name**                | **Link**
 ----------------------- | -----------------------------------------------------------------------
@@ -143,3 +143,16 @@ atom-icons              | [link](https://atom.io/packages/atom-icons)
 atom-mermaid            | [link](https://atom.io/packages/atom-mermaid)
 git-log                 | [link](https://atom.io/packages/git-log)
 platformio-ide-terminal | [link](https://atom.io/packages/platformio-ide-terminal)]
+
+#### Atom
+
+- Edit > Stylesheets
+
+```css
+# disable github statusbar
+.status-bar {
+  .github-StatusBarTile {
+    display: none;
+  }
+}
+```
