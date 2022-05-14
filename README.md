@@ -96,7 +96,7 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
     Command: gnome-system-monitor
     Shortcut: `ctrl+shift+esc`
     ```
-- Users > Avatar > `$HOME/Pictures/Wallpapers/wallpaper.png
+- Users > Avatar > `$HOME/Pictures/Wallpapers/avatar.png`
 - Users > Automatic login > On
 
 #### Gnome tweaks
@@ -105,8 +105,8 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 - Appearance > Icons > Fluent-dark
 - Appearance > Shell > Fluent-round-dark
 - Appearance > Sound > Windows_10_sounds
-- Appearance > Background > Image > `$HOME/Pictures/Wallpapers/wallpaper.png
-- Appearance > Lock Screen > Image > `$HOME/Pictures/Wallpapers/wallpaper.png
+- Appearance > Background > Image > `$HOME/Pictures/Wallpapers/wallpaper.png`
+- Appearance > Lock Screen > Image > `$HOME/Pictures/Wallpapers/wallpaper.png`
 - Fonts > Interface Text > Inter Regular 11
 - Fonts > Document Text > Inter Regular 11
 - Fonts > Legacy Window Titles > Inter Regular 11
