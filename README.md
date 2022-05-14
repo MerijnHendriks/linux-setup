@@ -86,6 +86,16 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 - Appearance > Dark
 - Multitask > General > Hot Corners > Off
 - Mouse > Touchpad > Tap To Click > On
+- Keyboard > Shortcuts > Edit shortcuts
+  - System > Show the Overview > `super+tab`
+  - Navigtion > Switch Windows > `alt+tab`
+  - Screenshots > Take a screenshot interactively > `shift+super+s`
+  - Custom Shortcut > Add new
+    ```
+    Name: Launch task manager
+    Command: gnome-system-monitor
+    Shortcut: `ctrl+shift+esc`
+    ```
 
 #### Gnome tweaks
 
