@@ -96,6 +96,8 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
     Command: gnome-system-monitor
     Shortcut: `ctrl+shift+esc`
     ```
+- Users > Avatar > `$HOME/Pictures/Wallpapers/wallpaper.png
+- Users > Automatic login > On
 
 #### Gnome tweaks
 
