@@ -139,6 +139,7 @@ Address: https://searx.be/search?q=%s
 
 **Name**                | **Link**
 ----------------------- | -----------------------------------------------------------------------
+atom-icons              | [link](https://atom.io/packages/atom-icons)
 atom-mermaid            | [link](https://atom.io/packages/atom-mermaid)
 git-log                 | [link](https://atom.io/packages/git-log)
 platformio-ide-terminal | [link](https://atom.io/packages/platformio-ide-terminal)]
