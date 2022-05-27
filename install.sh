@@ -20,7 +20,7 @@ flatpak install -y flathub org.gnome.eog
 flatpak install -y flathub org.gnome.Evince
 flatpak install -y flathub org.mozilla.firefox
 flatpak install -y flathub io.github.celluloid_player.Celluloid
-flatpak install -y flathub com.github.PintaProject.Pinta
+flatpak install -y flatpak com.github.maoschanz.drawing
 flatpak install -y flathub com.mattjakeman.ExtensionManager
 flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub com.wps.Office
