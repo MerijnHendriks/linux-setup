@@ -77,7 +77,7 @@ tar -xf msaudio.tar.xz -C ../.local/share/sounds
 ## gedit nord theme
 git clone https://github.com/arcticicestudio/nord-gedit
 cd nord-gedit
-./install.sh
+./install.sh --global
 cd ..
 rm -rf nord-gedit
 
