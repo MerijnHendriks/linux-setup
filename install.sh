@@ -74,6 +74,13 @@ rm -rf fluent-icon-theme
 mkdir -p ../.local/share/sounds
 tar -xf msaudio.tar.xz -C ../.local/share/sounds
 
+## gedit nord theme
+git clone https://github.com/arcticicestudio/nord-gedit
+cd nord-gedit
+./install.sh
+cd ..
+rm -rf nord-gedit
+
 ## personalization
 mkdir -p ../Pictures/Avatar
 cp avatar.png ../Pictures/Avatars
