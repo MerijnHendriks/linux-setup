@@ -75,11 +75,7 @@ mkdir -p ../.local/share/sounds
 tar -xf msaudio.tar.xz -C ../.local/share/sounds
 
 ## gedit nord theme
-git clone https://github.com/arcticicestudio/nord-gedit
-cd nord-gedit
-./install.sh --global
-cd ..
-rm -rf nord-gedit
+cp nord.xml /usr/share/gtksourceview-4/styles
 
 ## personalization
 mkdir -p ../Pictures/Avatar
