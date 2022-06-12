@@ -4,14 +4,15 @@
 
 ## base desktop
 apt install -y gnome-shell gnome-terminal gnome-tweaks gnome-system-monitor gnome-disk-utility gnome-shell-extensions nautilus ubuntu-drivers-common cups linux-sound-base alsa-base alsa-utils flatpak apt-transport-https software-properties-common curl
-apt purge -y gedit
-apt autoremove -y --purge
 
-## install core drivers
+## core drivers
 ubuntu-drivers install
 
-## install hp printer driver
+## hp printer driver
 apt install -y hplip
+
+## gedit
+apt install -y gedit gedit-plugins
 
 ## flatpak and flathub
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -36,12 +37,8 @@ apt-add-repository -y https://packages.microsoft.com/ubuntu/22.04/prod
 apt update
 apt install -y dotnet-sdk-6.0
 
-## atom ide
-wget -O atom.deb https://atom.io/download/deb
-apt install -y xdg-utils
-dpkg -i atom.deb
-rm atom.deb
-apm install platformio-ide-terminal
+## nodejs
+apt install -y nodejs npm
 
 ## steam games
 wget -O steam.deb https://cdn.akamai.steamstatic.com/client/installer/steam.deb
