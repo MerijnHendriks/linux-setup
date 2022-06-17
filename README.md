@@ -75,7 +75,8 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 - style > override panel theme background opacity: On
 - behaviour > show tooltip on hover: Off
 - behaviour > isolate workspaces: On
-- behaviour > Disable show overview on startup: On
+- behaviour > click empty space to close overview: On
+- behaviour > disable show overview on startup: On
 - fine-tune > activate panel menu buttons on click only: On
 
 ##### Just perfection
