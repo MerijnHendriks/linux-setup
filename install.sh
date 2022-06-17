@@ -16,9 +16,7 @@ apt install -y hplip
 ## flatpak and flathub
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub org.gnome.eog
-# flatpak install -y flathub org.gnome.Epiphany
-flatpak install -y flathub org.gnome.Evince
-flatpak install -y flathub org.mozilla.firefox
+flatpak install -y flathub org.gnome.Epiphany
 flatpak install -y flathub io.github.celluloid_player.Celluloid
 flatpak install -y flatpak com.github.maoschanz.drawing
 flatpak install -y flathub com.mattjakeman.ExtensionManager
@@ -30,7 +28,7 @@ wget -O atom.deb https://atom.io/download/deb
 apt install -y xdg-utils
 dpkg -i atom.deb
 rm atom.deb
-apm install platformio-ide-terminal git-log file-icons nord-atom-ui
+apm install platformio-ide-terminal git-log file-icons
 
 ## clang
 apt install -y clang clangd clang-tidy clang-format lld llvm cmake ninja-build
@@ -62,13 +60,6 @@ apt install -y fonts-inter
 ## cursors
 apt install -y yaru-theme-icon
 
-## gtk theme (fluent)
-git clone https://github.com/vinceliuice/fluent-gtk-theme
-cd fluent-gtk-theme
-./install.sh --color dark --tweaks round --tweaks noborder --tweaks square
-cd ..
-rm -rf fluent-gtk-theme
-
 ## icon theme (fluent)
 git clone https://github.com/vinceliuice/fluent-icon-theme
 cd fluent-icon-theme
@@ -79,9 +70,6 @@ rm -rf fluent-icon-theme
 ## windows 10 sounds
 mkdir -p ../.local/share/sounds
 tar -xf msaudio.tar.xz -C ../.local/share/sounds
-
-## gedit nord theme
-cp nord.xml /usr/share/gtksourceview-4/styles
 
 ## personalization
 mkdir -p ../Pictures/Avatar
