@@ -109,8 +109,8 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 - Appearance > Cursor > Yaru
 - Appearance > Icons > Fluent-dark
 - Appearance > Sound > Windows_10_sounds
-- Appearance > Background > Image > `$HOME/Pictures/Wallpapers/wallpaper.png`
-- Appearance > Lock Screen > Image > `$HOME/Pictures/Wallpapers/wallpaper.png`
+- Appearance > Background > Image > `$HOME/Pictures/Wallpapers/wallpaper.jpg`
+- Appearance > Lock Screen > Image > `$HOME/Pictures/Wallpapers/wallpaper.jpg`
 - Fonts > Interface Text > Inter Regular 11
 - Fonts > Document Text > Inter Regular 11
 - Fonts > Legacy Window Titles > Inter Regular 11
@@ -154,7 +154,8 @@ platformio-ide-terminal | [link](https://atom.io/packages/platformio-ide-termina
 ```css
 # disable github statusbar
 .status-bar {
-  cursor-path, .github-StatusBarTile {
+  .![wallpaper](https://user-images.githubusercontent.com/54717671/174400642-c00ac3d4-32b3-421b-ab26-7d34994465b9.jpg)
+cursor-path, .github-StatusBarTile {
     display: none;
   }
 }
