@@ -70,12 +70,17 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 - position > thickness: 32
 - position > left box > Off
 - position > middle box > Off
-- style > app icon margin > 2
+- style > app icon margin > 2s
 - style > app icon padding > 6
+- style > override panel theme background opacity: On
+- behaviour > show tooltip on hover: Off
+- behaviour > isolate workspaces: On
+- behaviour > Disable show overview on startup: On
+- fine-tune > activate panel menu buttons on click only: On
 
 ##### Just perfection
 
-- workspaces app grid: off
+- workspaces app grid: Off
 
 #### Gnome shell
 
@@ -103,7 +108,6 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 
 - Appearance > Cursor > Yaru
 - Appearance > Icons > Fluent-dark
-- Appearance > Shell > Fluent-round-dark
 - Appearance > Sound > Windows_10_sounds
 - Appearance > Background > Image > `$HOME/Pictures/Wallpapers/wallpaper.png`
 - Appearance > Lock Screen > Image > `$HOME/Pictures/Wallpapers/wallpaper.png`
@@ -139,8 +143,7 @@ Address: https://searx.be/search?q=%s
 
 **Name**                | **Link**
 ----------------------- | -----------------------------------------------------------------------
-atom-icons              | [link](https://atom.io/packages/atom-icons)
-atom-mermaid            | [link](https://atom.io/packages/atom-mermaid)
+file-icons              | [link](https://atom.io/packages/file-icons)
 git-log                 | [link](https://atom.io/packages/git-log)
 platformio-ide-terminal | [link](https://atom.io/packages/platformio-ide-terminal)]
 
@@ -151,8 +154,63 @@ platformio-ide-terminal | [link](https://atom.io/packages/platformio-ide-termina
 ```css
 # disable github statusbar
 .status-bar {
-  .github-StatusBarTile {
+  cursor-path, .github-StatusBarTile {
     display: none;
   }
 }
+```
+
+- Edit > Config
+
+```cson
+"*":
+  core:
+    disabledPackages: [
+      "archive-view"
+      "autocomplete-atom-api"
+      "autocomplete-css"
+      "autocomplete-html"
+      "autocomplete-plus"
+      "autocomplete-snippets"
+      "background-tips"
+      "bracket-matcher"
+      "deprecation-cop"
+      "exception-reporting"
+      "fuzzy-finder"
+      "go-to-line"
+      "language-clojure"
+      "language-coffee-script"
+      "language-go"
+      "language-java"
+      "language-less"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-property-list"
+      "language-python"
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-rust-bundled"
+      "language-sass"
+      "language-shellscript"
+      "language-sql"
+      "language-todo"
+      "language-toml"
+      "language-typescript"
+      "language-yaml"
+      "metrics"
+      "open-on-github"
+      "package-generator"
+      "snippets"
+      "spell-check"
+      "styleguide"
+      "symbols-view"
+      "timecop"
+      "welcome"
+      "about"
+    ]
+    telemetryConsent: "no"
+  welcome:
+    showOnStartup: false
 ```
