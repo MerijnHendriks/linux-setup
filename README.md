@@ -70,7 +70,7 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 - position > thickness: 32
 - position > left box > Off
 - position > middle box > Off
-- style > app icon margin > 2s
+- style > app icon margin > 2
 - style > app icon padding > 6
 - style > override panel theme background opacity: On
 - behaviour > show tooltip on hover: Off
@@ -81,6 +81,7 @@ user themes       | [link](https://extensions.gnome.org/extension/19/user-themes
 
 ##### Just perfection
 
+- workspace switcher: Off
 - workspaces app grid: Off
 
 #### Gnome shell
