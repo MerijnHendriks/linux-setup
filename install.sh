@@ -3,7 +3,8 @@
 # Core system
 
 ## base desktop
-apt install -y gnome-shell gnome-terminal gnome-tweaks gnome-system-monitor gnome-disk-utility gnome-shell-extensions nautilus ubuntu-drivers-common cups linux-sound-base alsa-base alsa-utils flatpak apt-transport-https software-properties-common curl
+apt install -y gnome-shell gnome-terminal gnome-tweaks gnome-system-monitor gnome-disk-utility gnome-shell-extensions nautilus ubuntu-drivers-common cups linux-sound-base alsa-base alsa-utils flatpak apt-transport-https software-properties-common curl fwupd
+app install no-install-recommends gnome-software
 apt purge gedit
 apt autoremove --purge
 
@@ -14,6 +15,7 @@ ubuntu-drivers install
 apt install -y hplip
 
 ## flatpak and flathub
+apt install gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub org.gnome.eog
 flatpak install -y flathub org.gnome.Epiphany
