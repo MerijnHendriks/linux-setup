@@ -3,9 +3,10 @@
 # Core system
 
 ## base desktop
-apt install -y gnome-shell gnome-terminal gnome-tweaks gnome-system-monitor gnome-disk-utility gnome-shell-extensions nautilus ubuntu-drivers-common cups linux-sound-base alsa-base alsa-utils flatpak apt-transport-https software-properties-common curl fwupd
-app install no-install-recommends gnome-software
-apt purge gedit
+apt install -y ubuntu-drivers-common cups alsa-base flatpak fwupd
+app install --no-install-recommends gnome-session gdm3 gnome-keyring software-properties-common xdg-utils network-manager-gnome gkbd-capplet gnome-menus power-profiles-daemon unzip pulseaudio-module-bluetooth
+app install --no-install-recommends  gnome-control-center gnome-shell-extensions nautilus gnome-terminal nautilus-extension-gnome-terminal gnome-disk-utility gnome-system-monitor gnome-tweaks gnome-software 
+apt purge gedit yelp
 apt autoremove --purge
 
 ## core drivers
@@ -17,6 +18,7 @@ apt install -y hplip
 ## flatpak and flathub
 apt install gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install -y flathub com.github.tchx84.Flatseal
 flatpak install -y flathub org.gnome.eog
 flatpak install -y flathub org.gnome.Epiphany
 flatpak install -y flathub io.github.celluloid_player.Celluloid
@@ -24,18 +26,14 @@ flatpak install -y flatpak com.github.maoschanz.drawing
 flatpak install -y flathub com.mattjakeman.ExtensionManager
 flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub com.wps.Office
-
-## atom ide
-wget -O atom.deb https://atom.io/download/deb
-apt install -y xdg-utils
-dpkg -i atom.deb
-rm atom.deb
-apm install platformio-ide-terminal git-log file-icons
+flatpak install -y flathub com.valvesoftware.Steam
+flatpak install -y flathub io.atom.Atom
 
 ## clang
 apt install -y clang clangd clang-tidy clang-format lld llvm cmake ninja-build
 
 ## dotnet 6.0
+sudo apt install --no-install-recommends apt-transport-https
 wget -O mspkg.deb https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
 dpkg -i mspkg.deb
 rm mspkg.deb
@@ -45,11 +43,6 @@ apt install -y dotnet-sdk-6.0
 
 ## nodejs
 apt install -y nodejs npm
-
-## steam games
-wget -O steam.deb https://cdn.akamai.steamstatic.com/client/installer/steam.deb
-dpkg -i steam.deb
-rm steam.deb
 
 # Customization
 
