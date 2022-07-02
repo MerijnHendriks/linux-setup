@@ -6,7 +6,7 @@
 apt install -y ubuntu-drivers-common cups alsa-base flatpak fwupd
 app install --no-install-recommends gnome-session gdm3 gnome-keyring software-properties-common xdg-utils network-manager-gnome gkbd-capplet gnome-menus power-profiles-daemon unzip pulseaudio-module-bluetooth
 app install --no-install-recommends  gnome-control-center gnome-shell-extensions nautilus gnome-terminal nautilus-extension-gnome-terminal gnome-disk-utility gnome-system-monitor gnome-tweaks gnome-software 
-apt purge gedit yelp
+apt purge gedit
 apt autoremove --purge
 
 ## core drivers
