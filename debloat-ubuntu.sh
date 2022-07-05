@@ -27,6 +27,7 @@ sudo apt purge gnome-font-viewer    # font viewer
 sudo apt purge gnome-logs           # logs
 sudo apt purge seahorse             # passwords and keys
 sudo apt purge gnome-remote-desktop # remote desktop
+sudo apt purge ubuntu-desktop       # full ubuntu desktop metapackage
 
 # remove remains
 sudo apt autoremove --purge
