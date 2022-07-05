@@ -16,6 +16,7 @@ sudo apt autoremove
 
 # reinstall minimal gnome environment
 sudo apt install --no-install-recommends gnome-session gdm3 gnome-shell gnome-terminal nautilus gnome-software gnome-system-monitor gnome-shell-extention-appindicator gnome-bluetooth linux-sound-base yaru-theme-sound yaru-theme-gtk yaru-theme-icon yaru-theme-gnome-shell
+sudo apt install gnome-shell-extensions
 
 # install flatpak
 sudo apt install flatpak gnome-software-plugin-flatpak
