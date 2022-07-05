@@ -12,35 +12,29 @@ sudo apt install git
 git clone https://github.com/merijnhendriks/linux-setup
 cd linux-setup
 
-# cleanup 20.04 mini iso migration
-chmox +x migration.sh
-sudo ./migration.sh
+# make scripts executables
+chmod +x debloat-ubuntu.sh
+chmod +x install-flatpaks.sh
+chmod +x install-clang.sh
+chmod +x install-dotnet6.sh
+chmod +x install-node18.sh
 
-# install software
-chmox +x install.sh
-sudo ./install.sh
+# run scripts
+sudo ./debloat-ubuntu.sh
+sudo ./install-flatpaks.sh
+sudo ./install-clang.sh
+sudo ./install-dotnet6.sh
+sudo ./nstall-node18.sh
 
 # cleanup
 cd ..
-sudo rm -rf linux-setup
+rm -rf linux-setup
 
-# restart into shell
+# restart os
 reboot
 ```
 
 ## Wiki
-
-### Upgrade image from 20.04 mini.iso
-
-Mini iso: [link](https://mirrors.edge.kernel.org/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot)
-
-1. install base system
-2. enter new install (press `ctrl+alt+f2`)
-3. upgrade system
-
-```
-sudo do-release-upgrade -d
-```
 
 ### Customization
 
