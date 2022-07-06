@@ -35,7 +35,7 @@ sudo apt install --no-install-recommends nautilus                    # files
 sudo apt install --no-install-recommends ubuntu-settings             # settings
 
 # reinstall yaru theme
-sudo apt install --no-install-recommends yaru-theme-gnome-shell yaru-theme-gtk yaru-theme-sound yaru-theme-icon ubuntu-wallpapers 
+sudo apt install --no-install-recommends yaru-theme-gnome-shell yaru-theme-gtk yaru-theme-sound yaru-theme-icon 
 
 # remove remains
 sudo apt autoremove --purge
