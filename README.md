@@ -26,6 +26,7 @@ chmod +x install-flatpaks.sh
 chmod +x install-clang.sh
 chmod +x install-dotnet6.sh
 chmod +x install-node18.sh
+chmod +x grub-hp.sh
 
 # run scripts
 sudo ./debloat-ubuntu.sh
@@ -33,6 +34,15 @@ sudo ./install-flatpaks.sh
 sudo ./install-clang.sh
 sudo ./install-dotnet6.sh
 sudo ./nstall-node18.sh
+
+# set grub theme
+sudo ./grub-hp.sh
+sudo nano /etc/default/grub
+# GRUB_CMDLINE_LINUX_DEFAULT="quiet nosplash"
+# GRUB_CMDLINE_LINUX="tty12"
+# GRUB_GFXMODE=1920x1080
+# GRUB_THEME=/boot/grub/themes/hp/theme.txt
+sudo update-grub
 
 # cleanup
 cd ..
@@ -45,19 +55,6 @@ reboot
 ## Wiki
 
 ### Customization
-
-#### GRUB
-
-```sh
-sudo nano /etc/default/grub
-# GRUB_CMDLINE_LINUX_DEFAULT="quiet nosplash"
-# GRUB_CMDLINE_LINUX="tty12"
-# GRUB_GFXMODE=1920x1080
-# GRUB_THEME=/boot/grub/themes/hp/theme.txt
-# press ctrl-s
-# press ctrl-x
-sudo update-grub
-```
 
 #### Gnome extensions
 
