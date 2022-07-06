@@ -18,6 +18,7 @@ sudo rm -rf ~/snap /snap /var/snap /var/lib/snapd
 # remove apt software
 sudo apt purge ubuntu-desktop         # full ubuntu desktop metapackage
 sudo apt purge ubuntu-desktop-minimal # minimal ubuntu desktop metapackage
+sudo apt purge update-notifier        # software updater
 
 # reinstall important stuff
 sudo apt install --no-install-recommends linux-sound-base            # audio driver
