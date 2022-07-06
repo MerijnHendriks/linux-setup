@@ -2,6 +2,10 @@
 
 My linux system install script and more
 
+@ Requirements
+
+- Ubuntu Desktop 22.04
+
 ## Scrips usage
 
 ```sh
@@ -45,7 +49,7 @@ sudo nano /etc/default/grub
 # remove "quiet" option from cmd
 # press ctrl-s
 # press ctrl-x
-sudo grub-update
+sudo update-grub
 ```
 
 #### Gnome extensions
