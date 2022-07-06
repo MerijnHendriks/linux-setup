@@ -54,14 +54,17 @@ sudo update-grub
 
 #### Gnome extensions
 
-**Name**          | **Link**
------------------ | -----------------------------------------------------------------------
-appindicator      | [link](https://extensions.gnome.org/extension/615/appindicator-support)
-blur my shell     | [link](https://extensions.gnome.org/extension/3193/blur-my-shell)
-dash to panel     | [link](https://extensions.gnome.org/extension/1160/dash-to-panel)
-impatience        | [link](https://extensions.gnome.org/extension/277/impatience)
-just perfection   | [link](https://extensions.gnome.org/extension/3843/just-perfection)
-user themes       | [link](https://extensions.gnome.org/extension/19/user-themes)
+**Name**                          | **Link**
+----------------------------------| -----------------------------------------------------------------------
+appindicator                      | [link](https://extensions.gnome.org/extension/615/appindicator-support)
+blur my shell                     | [link](https://extensions.gnome.org/extension/3193/blur-my-shell)
+dash to panel                     | [link](https://extensions.gnome.org/extension/1160/dash-to-panel)
+desktop icons: neo                | [link]()
+impatience                        | [link](https://extensions.gnome.org/extension/277/impatience)
+just perfection                   | [link](https://extensions.gnome.org/extension/3843/just-perfection)
+refresh wifi connections          | [link]()
+user themes                       | [link](https://extensions.gnome.org/extension/19/user-themes)
+start overlay in application view | [link]()
 
 ##### Dash to panel
 
