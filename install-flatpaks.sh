@@ -3,6 +3,7 @@ sudo apt install gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub com.github.tchx84.Flatseal
 flatpak install -y flathub com.mattjakeman.ExtensionManager
+flatpak install -y flathub org.gnome.FileRoller
 flatpak install -y flathub org.gnome.Epiphany
 flatpak install -y flathub org.gnome.TextEditor
 flatpak install -y flathub org.gnome.eog
