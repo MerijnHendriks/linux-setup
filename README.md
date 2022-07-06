@@ -42,11 +42,13 @@ reboot
 
 ### Customization
 
-#### Boot show startup logs
+#### GRUB
 
 ```sh
 sudo nano /etc/default/grub
-# remove "quiet" option from cmd
+# GRUB_CMDLINE_LINUX_DEFAULT="quiet nosplash"
+# GRUB_CMDLINE_LINUX="tty12"
+# GRUB_GFXMODE=1280x720
 # press ctrl-s
 # press ctrl-x
 sudo update-grub
@@ -59,11 +61,11 @@ sudo update-grub
 appindicator                      | [link](https://extensions.gnome.org/extension/615/appindicator-support)
 blur my shell                     | [link](https://extensions.gnome.org/extension/3193/blur-my-shell)
 dash to panel                     | [link](https://extensions.gnome.org/extension/1160/dash-to-panel)
-desktop icons: neo                | [link]()
+desktop icons: neo                | [link](https://extensions.gnome.org/extension/4337/desktop-icons-neo)
 just perfection                   | [link](https://extensions.gnome.org/extension/3843/just-perfection)
-refresh wifi connections          | [link]()
+refresh wifi connections          | [link](https://extensions.gnome.org/extension/905/refresh-wifi-connections)
 user themes                       | [link](https://extensions.gnome.org/extension/19/user-themes)
-start overlay in application view | [link]()
+start overlay in application view | [link](https://extensions.gnome.org/extension/5040/start-overlay-in-application-view)
 
 ##### Dash to panel
 
@@ -77,6 +79,7 @@ start overlay in application view | [link]()
 - behaviour > isolate workspaces: On
 - behaviour > click empty space to close overview: On
 - behaviour > disable show overview on startup: On
+- behaviour > startup status > Desktop
 - fine-tune > activate panel menu buttons on click only: On
 
 ##### Just perfection
