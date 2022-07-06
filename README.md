@@ -2,15 +2,19 @@
 
 My linux system install script and more
 
-@ Requirements
+## Requirements
 
 - Ubuntu Desktop 22.04
 
-## Scrips usage
+## Usage
+
+1. Install Ubuntu Desktop (minimal)
+2. Open terminal
+3. Execute the following:
 
 ```sh
 # install requirements
-sudo apt install git
+sudo apt install --no-install-recommends git
 
 # download script
 git clone https://github.com/merijnhendriks/linux-setup
@@ -49,6 +53,7 @@ sudo nano /etc/default/grub
 # GRUB_CMDLINE_LINUX_DEFAULT="quiet nosplash"
 # GRUB_CMDLINE_LINUX="tty12"
 # GRUB_GFXMODE=1280x720
+# GRUB_THEME=/boot/grub/themes/hp/theme.txt
 # press ctrl-s
 # press ctrl-x
 sudo update-grub
