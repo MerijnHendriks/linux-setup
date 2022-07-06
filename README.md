@@ -33,7 +33,7 @@ sudo ./debloat-ubuntu.sh
 sudo ./install-flatpaks.sh
 sudo ./install-clang.sh
 sudo ./install-dotnet6.sh
-sudo ./nstall-node18.sh
+sudo ./install-node18.sh
 
 # set grub theme
 sudo ./grub-hp.sh
