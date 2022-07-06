@@ -16,18 +16,12 @@ sudo apt purge snapd
 sudo rm -rf ~/snap /snap /var/snap /var/lib/snapd
 
 # remove apt software
-sudo apt purge evince               # document viewer
-sudo apt purge gedit                # text editor
-sudo apt purge eog                  # image viewer
-sudo apt purge gnome-disk-utility   # disks
-sudo apt purge gnome-power-manager  # power statistics
-sudo apt purge gnome-calculator     # calculator
-sudo apt purge gnome-characters     # characters
-sudo apt purge gnome-font-viewer    # font viewer
-sudo apt purge gnome-logs           # logs
-sudo apt purge seahorse             # passwords and keys
-sudo apt purge gnome-remote-desktop # remote desktop
-sudo apt purge ubuntu-desktop       # full ubuntu desktop metapackage
+sudo apt purge ubuntu-desktop         # full ubuntu desktop metapackage
+sudo apt purge ubuntu-desktop-minimal # minimal ubuntu desktop metapackage
+
+# reinstall important stuff
+sudo apt install --no-install-recommends linux-sound-base acpi-support gnome-shell gnome-terminal gnome-system-monitor gnome-bluetooth gnome-session-canberra gnome-software nautilus gsettings-ubuntu-schemas ubuntu-settings
+sudo apt install --no-install-recommends yaru-theme-gnome-shell yaru-theme-gtk yaru-theme-sound yaru-theme-icon ubuntu-wallpapers 
 
 # remove remains
 sudo apt autoremove --purge
