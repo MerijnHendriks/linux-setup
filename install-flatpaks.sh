@@ -10,4 +10,3 @@ flatpak install -y flathub com.mattjakeman.ExtensionManager
 flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub com.wps.Office
 flatpak install -y flathub com.valvesoftware.Steam
-flatpak install -y flathub io.atom.Atom
