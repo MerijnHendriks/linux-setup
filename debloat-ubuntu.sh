@@ -36,6 +36,7 @@ sudo apt install --no-install-recommends ubuntu-settings             # settings
 
 # reinstall yaru theme
 sudo apt install --no-install-recommends yaru-theme-gnome-shell yaru-theme-gtk yaru-theme-sound yaru-theme-icon 
+gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'
 
 # remove remains
 sudo apt autoremove --purge
