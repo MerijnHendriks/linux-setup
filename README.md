@@ -52,7 +52,7 @@ reboot
 sudo nano /etc/default/grub
 # GRUB_CMDLINE_LINUX_DEFAULT="quiet nosplash"
 # GRUB_CMDLINE_LINUX="tty12"
-# GRUB_GFXMODE=1280x720
+# GRUB_GFXMODE=1920x1080
 # GRUB_THEME=/boot/grub/themes/hp/theme.txt
 # press ctrl-s
 # press ctrl-x
