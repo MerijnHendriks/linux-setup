@@ -81,6 +81,7 @@ start overlay in application view | [link](https://extensions.gnome.org/extensio
 - behaviour > disable show overview on startup: On
 - behaviour > startup status > Desktop
 - fine-tune > activate panel menu buttons on click only: On
+- visibility > events > Off
 
 ##### Just perfection
 
