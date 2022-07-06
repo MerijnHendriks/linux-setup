@@ -54,6 +54,20 @@ reboot
 
 ## Wiki
 
+### Tweaks
+
+#### Disable steam system tray
+
+Source: [link](https://www.reddit.com/r/linux_gaming/comments/8r7iqt/how_to_solve_steam_not_minimizing_to_tray_when/)
+
+```sh
+nano ~/.bashrc
+```
+
+```txt
+export STEAM_FRAME_FORCE_CLOSE=1
+```
+
 ### Customization
 
 #### Gnome extensions
