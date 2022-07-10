@@ -3,7 +3,7 @@
 # remove snap, also implictly removes:
 # - firefox (snap package)
 # - gnome-software-plugin-snap
-# - gnome-software (plugin being recommended)
+# - gnome-software (because we remove the recommended snap plugin)
 sudo snap remove firefox
 sudo snap remove gtk-common-themes
 sudo snap remove snap-store
