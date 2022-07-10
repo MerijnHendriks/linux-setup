@@ -45,8 +45,10 @@ sudo apt install -y --no-install-recommends nautilus                    # files
 sudo apt install -y --no-install-recommends ubuntu-settings             # settings
 
 # reinstall yaru theme
-sudo apt install -y --no-install-recommends yaru-theme-gnome-shell yaru-theme-gtk yaru-theme-sound yaru-theme-icon 
-gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'
+sudo apt install -y --no-install-recommends yaru-theme-gnome-shell           # system theme
+sudo apt install -y --no-install-recommends yaru-theme-gtk                   # window theme
+sudo apt install -y --no-install-recommends yaru-theme-sound yaru-theme-icon # system/apps icons teme
+gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'                # restore cursor theme to yaru
 
 # reinstall gnome extensions
 sudo apt install -y --no-install-recommends gnome-shell-extension-ubuntu-dock      # desktop taskbar
