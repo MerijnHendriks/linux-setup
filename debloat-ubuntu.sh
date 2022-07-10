@@ -48,5 +48,10 @@ sudo apt install -y --no-install-recommends ubuntu-settings             # settin
 sudo apt install -y --no-install-recommends yaru-theme-gnome-shell yaru-theme-gtk yaru-theme-sound yaru-theme-icon 
 gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'
 
+# reinstall gnome extensions
+sudo apt install -y --no-install-recommends gnome-shell-extension-ubuntu-dock      # desktop taskbar
+sudo apt install -y --no-install-recommends gnome-shell-extension-appindicator     # desktop taskbar tray icons
+sudo apt install -y --no-install-recommends gnome-shell-extension-desktop-icons-ng # desktop icons
+
 # remove remains
 sudo apt autoremove -y --purge
