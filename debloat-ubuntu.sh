@@ -35,7 +35,7 @@ sudo apt purge -y libreoffice-style-breeze # libreoffice breeze symbol style
 # reinstall important stuff
 sudo apt install -y --no-install-recommends linux-sound-base            # audio driver
 sudo apt install -y --no-install-recommends acpi-support                # acpi event support for certain devices
-sudo apt install -y --no-install-recommends gnome-session gdm3          # gnome 40 core
+sudo apt install -y --no-install-recommends gnome-session gdm3          # gnome 42 core
 sudo apt install -y --no-install-recommends gnome-shell-extension-prefs # gnome extensions system
 sudo apt install -y --no-install-recommends gnome-terminal              # terminal
 sudo apt install -y --no-install-recommends gnome-system-monitor        # system monitor
