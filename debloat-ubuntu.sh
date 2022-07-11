@@ -50,7 +50,6 @@ apt purge -y orca                           # screen reader
 apt purge -y gnome-accessibility-themes     # high-constrast themes
 apt purge -y plymouth                       # boot screen animation
 apt purge -y ibus                           # multi-keyboard layout support
-apt purge -y libpam-fprintd                 # fingerprint authentication
 
 # reinstall important stuff
 apt install -y --no-install-recommends linux-sound-base            # audio driver
