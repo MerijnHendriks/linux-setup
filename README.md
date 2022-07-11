@@ -88,57 +88,32 @@ reboot
 **Name**                          | **Link**
 ----------------------------------| -----------------------------------------------------------------------
 appindicator                      | [link](https://extensions.gnome.org/extension/615/appindicator-support)
-blur my shell                     | [link](https://extensions.gnome.org/extension/3193/blur-my-shell)
 dash to panel                     | [link](https://extensions.gnome.org/extension/1160/dash-to-panel)
-desktop icons: neo                | [link](https://extensions.gnome.org/extension/4337/desktop-icons-neo)
 just perfection                   | [link](https://extensions.gnome.org/extension/3843/just-perfection)
 refresh wifi connections          | [link](https://extensions.gnome.org/extension/905/refresh-wifi-connections)
-user themes                       | [link](https://extensions.gnome.org/extension/19/user-themes)
 start overlay in application view | [link](https://extensions.gnome.org/extension/5040/start-overlay-in-application-view)
-
-##### Dash to panel
-
-- position > thickness: 32
-- position > left box > Off
-- position > middle box > Off
-- style > app icon margin > 2
-- style > app icon padding > 6
-- style > override panel theme background opacity: On
-- behaviour > show tooltip on hover: Off
-- behaviour > isolate workspaces: On
-- behaviour > click empty space to close overview: On
-- behaviour > disable show overview on startup: On
-- behaviour > startup status > Desktop
-- fine-tune > activate panel menu buttons on click only: On
-- visibility > events > Off
 
 ##### Just perfection
 
-- workspace switcher: Off
-- workspaces app grid: Off
-- animation: Disabled
+- Behaviour > Startup status: Desktop
+- Visibility > Events: Off
+- Visibility > Workspace switcher: Off
+- Visibility > Workspaces app grid: Off
+- Customize > Animation: Disabled
 
-#### Gnome shell
+##### Dash to panel
 
-- Panel > Help > Unpin
-
-#### Gnome settings
-
-- Appearance > Dark
-- Multitask > General > Hot Corners > Off
-- Mouse > Touchpad > Tap To Click > On
-- Keyboard > Shortcuts > Edit shortcuts
-  - System > Show the Overview > `super+tab`
-  - Navigtion > Switch Windows > `alt+tab`
-  - Screenshots > Take a screenshot interactively > `shift+super+s`
-  - Custom Shortcut > Add new
-    ```
-    Name: Launch task manager
-    Command: gnome-system-monitor
-    Shortcut: `ctrl+shift+esc`
-    ```
-- Users > Avatar > `$HOME/Pictures/Wallpapers/avatar.png`
-- Users > Automatic login > On
+- Position > Thickness: 32
+- Position > Left box > Off
+- Position > Center box > Off
+- Position > Date Menu > Below system menu
+- Style > App icon margin > 2
+- Style > App icon padding > 6
+- Style > Override panel theme background opacity: On
+- Behaviour > Show tooltip on hover: Off
+- Behaviour > Isolate workspaces: On
+- Behaviour > Click empty space to close overview: On
+- Fine-tune > Activate panel menu buttons on click only: On
 
 #### Gnome web
 
