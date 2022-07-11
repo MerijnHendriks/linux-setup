@@ -60,19 +60,19 @@ reboot
 
 #### Settings
 
-- Bluetooth > Off
-- Notifications > Lock Screen Notifications > Off
-- Search > Software > Off
-- Search > Terminal > Off
-- Privacy > File History & Trash > File History > Off
-- Privacy > File History & Trash > Automatically Delete Trash Content > On
-- Privacy > File History & Trash > Automatically Delete Temporary Files > On
-- Privacy > Screen > Blank Screen Delay > Never
-- Privacy > Screen > Automatic Screen Lock > Off
-- Power > Dim Screen > Off
-- Power > Automatic Suspend > Off
-- Display > Resolution > 1280x720
-- Removable Media > Never prompt or start programs on media insertion > On
+- Bluetooth: Off
+- Notifications > Lock Screen Notifications: Off
+- Search > Software: Off
+- Search > Terminal: Off
+- Privacy > File History & Trash > File History: Off
+- Privacy > File History & Trash > Automatically Delete Trash Content: On
+- Privacy > File History & Trash > Automatically Delete Temporary Files: On
+- Privacy > Screen > Blank Screen Delay: Never
+- Privacy > Screen > Automatic Screen Lock: Off
+- Power > Dim Screen: Off
+- Power > Automatic Suspend: Off
+- Display > Resolution: 1280x720
+- Removable Media > Never prompt or start programs on media insertion: On
 
 #### Gnome tweaks
 
@@ -110,9 +110,10 @@ start overlay in application view | [link](https://extensions.gnome.org/extensio
 - Style > App icon margin > 2
 - Style > App icon padding > 6
 - Style > Override panel theme background opacity: On
-- Behaviour > Show tooltip on hover: Off
-- Behaviour > Isolate workspaces: On
 - Behaviour > Click empty space to close overview: On
+- Behaviour > Double Super to App Grid: Off
+- Behaviour > Isolate workspaces: On
+- Behaviour > Show tooltip on hover: Off
 - Fine-tune > Activate panel menu buttons on click only: On
 
 #### Gnome web
