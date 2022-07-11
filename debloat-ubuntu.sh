@@ -66,6 +66,8 @@ apt purge -y fonts-droid-fallback               # droid
 apt purge -y fonts-urw-base35                   # postscript
 apt purge -y fonts-freefont-ttf                 # freefont
 
+
+
 # reinstall important stuff
 apt install -y --no-install-recommends linux-sound-base            # audio driver
 apt install -y --no-install-recommends acpi-support                # acpi event support for certain devices
@@ -90,6 +92,10 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'            # resto
 apt install -y --no-install-recommends gnome-shell-extension-ubuntu-dock      # desktop taskbar
 apt install -y --no-install-recommends gnome-shell-extension-appindicator     # desktop taskbar tray icons
 apt install -y --no-install-recommends gnome-shell-extension-desktop-icons-ng # desktop icons
+
+# remove unused icons
+rm /usr/share/applications/software-properties-drivers.desktop # additional drivers icon
+rm /usr/share/applications/gnome-language-selector.desktop     # language support icon
 
 # remove remains
 apt autoremove -y --purge
