@@ -74,12 +74,12 @@ apt install -y --no-install-recommends nautilus                    # files
 apt install -y --no-install-recommends ubuntu-settings             # settings
 
 # reinstall yaru theme
-apt install -y --no-install-recommends yaru-theme-gnome-shell                  # system theme
-apt install -y --no-install-recommends yaru-theme-gtk                          # window theme
-apt install -y --no-install-recommends yaru-theme-sound yaru-theme-icon        # system/apps icons theme
-apt install -y --no-install-recommends ubuntu-sounds                           # sound theme
-apt install -y --no-install-recommends fonts-ubuntu fonts-ubuntu-console       # system fonts
-gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'                  # restore cursor theme to yaru
+apt install -y --no-install-recommends yaru-theme-gnome-shell            # system theme
+apt install -y --no-install-recommends yaru-theme-gtk                    # window theme
+apt install -y --no-install-recommends yaru-theme-sound yaru-theme-icon  # system/apps icons theme
+apt install -y --no-install-recommends ubuntu-sounds                     # sound theme
+apt install -y --no-install-recommends fonts-ubuntu fonts-ubuntu-console # system fonts
+gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'            # restore cursor theme to yaru
 
 # reinstall gnome extensions
 apt install -y --no-install-recommends gnome-shell-extension-ubuntu-dock      # desktop taskbar
