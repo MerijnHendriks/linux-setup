@@ -25,6 +25,7 @@ apt purge -y evince                   # documents viewer
 apt purge -y yelp                     # help
 apt purge -y gedit                    # text editor
 apt purge -y totem                    # videos
+apt purge -y thunderbird              # email
 apt purge -y libreoffice-gnome        # libreoffice gnome intergration
 apt purge -y libreoffice-writer       # libreoffice writer
 apt purge -y libreoffice-calc         # libreoffice spreadsheats
