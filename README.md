@@ -62,7 +62,7 @@ reboot
 
 ```sh
 cp /etc/xdg/autostart/gnome-software-service.desktop ~/.config/autostart
-nano ~/.config/autostart
+nano ~/.config/autostart/gnome-software-service.desktop 
 ```
 
 ```txt
