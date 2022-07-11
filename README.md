@@ -82,11 +82,13 @@ Ribbon > Hamburger > Ribbon Classic Menu    | Off
 #### Software Properties
 
 **Location**                                                  | **Value**
-------------------------------------------------------------- | -------------------
+------------------------------------------------------------- | ---------------------
 Ubuntu Software > Downloadable from the internet > Restricted | Off
 Ubuntu Software > Downloadable from the internet > Multiverse | Off
+Updates > Subscribed to                                       | Security updates only
 Updates > Automatically check for updates                     | Never
 Updates > When there are security updates                     | Display immediately
+Updates > Notify me of a new ubuntu version                   | Never
 
 #### Gnome Settings
 
