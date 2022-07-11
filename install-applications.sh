@@ -14,6 +14,7 @@ dpkg -i discord.deb
 rm discord.deb
 
 # steam
+sudo apt install --no-install-recommends curl
 wget -O steam.deb https://cdn.akamai.steamstatic.com/client/installer/steam.deb
 dpkg -i steam.deb
 rm steam.deb
