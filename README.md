@@ -79,10 +79,17 @@ Settings > Skin Center                      | Comfort
 Ribbon > Hamburger > Ribbon Button Centered | On
 Ribbon > Hamburger > Ribbon Classic Menu    | Off
 
+#### Discord
+
+**Location**                                | **Value**
+------------------------------------------- | ---------
+Linux Settings > Open Discord               | Off
+Linux Settings > Minimize to tray           | Off
+
 #### Steam
 
 **Location**                                 | **Value**
--------------------------------------------- | ---------------------
+-------------------------------------------- | ---------
 In-Game > Enable steam overlay while in-game | Off
 In-Game > Steam Networking                   | Never
 Interface > Steam window                     | Library
