@@ -41,7 +41,7 @@ sudo ./install-node18.sh
 sudo ./grub-hp.sh
 sudo nano /etc/default/grub
 # GRUB_CMDLINE_LINUX_DEFAULT="quiet nosplash"
-# GRUB_CMDLINE_LINUX="tty12"
+# GRUB_CMDLINE_LINUX="console=tty12"
 # GRUB_GFXMODE=1920x1080
 # GRUB_THEME=/boot/grub/themes/hp/theme.txt
 sudo update-grub
