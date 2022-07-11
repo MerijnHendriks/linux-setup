@@ -30,6 +30,7 @@ apt purge -y thunderbird                # email
 apt purge -y libreoffice-common         # libreoffice
 apt purge -y libreoffice-style-colibre  # libreoffice colibre symbol style
 apt purge -y gnome-startup-applications # startup application manager
+apt purge -y network-manager-gnome      # advanced network configuration
 
 # remove system parts
 apt purge -y whoopsie                          # error tracker submission
