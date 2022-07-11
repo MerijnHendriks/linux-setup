@@ -66,8 +66,6 @@ apt purge -y fonts-droid-fallback               # droid
 apt purge -y fonts-urw-base35                   # postscript
 apt purge -y fonts-freefont-ttf                 # freefont
 
-
-
 # reinstall important stuff
 apt install -y --no-install-recommends linux-sound-base            # audio driver
 apt install -y --no-install-recommends acpi-support                # acpi event support for certain devices
