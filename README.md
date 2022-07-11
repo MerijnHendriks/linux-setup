@@ -21,12 +21,12 @@ git clone https://github.com/merijnhendriks/linux-setup
 cd linux-setup
 
 # make scripts executables
-chmod +x debloat-ubuntu.sh
-chmod +x install-flatpaks.sh
-chmod +x install-clang.sh
-chmod +x install-dotnet6.sh
-chmod +x install-node18.sh
-chmod +x grub-hp.sh
+sudo chmod +x debloat-ubuntu.sh
+sudo chmod +x install-flatpaks.sh
+sudo chmod +x install-clang.sh
+sudo chmod +x install-dotnet6.sh
+sudo chmod +x install-node18.sh
+sudo chmod +x grub-hp.sh
 
 # run scripts
 sudo ./debloat-ubuntu.sh
