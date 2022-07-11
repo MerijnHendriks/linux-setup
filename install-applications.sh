@@ -9,12 +9,13 @@ apt install -y --no-install-recommends celluloid
 apt install -y --no-install-recommends gnome-builder
 
 # discord
+apt install --no-install-recommends libgconf-2-4 libc++1
 wget -O discord.deb https://discord.com/api/download?platform=linux&format=deb
 dpkg -i discord.deb
 rm discord.deb
 
 # steam
-sudo apt install --no-install-recommends curl
+apt install --no-install-recommends curl
 wget -O steam.deb https://cdn.akamai.steamstatic.com/client/installer/steam.deb
 dpkg -i steam.deb
 rm steam.deb
