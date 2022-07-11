@@ -58,7 +58,20 @@ reboot
 
 ### Tweaks
 
-#### Settings
+#### Disable gnome-software from startup
+
+```sh
+cp /etc/xdg/autostart/gnome-software-service.desktop ~/.config/autostart
+nano ~/.config/autostart
+```
+
+```txt
+X-GNOME-Autostart-enabled=false
+```
+
+### Customization
+
+#### Gnome Settings
 
 - Bluetooth: Off
 - Notifications > Lock Screen Notifications: Off
@@ -80,8 +93,6 @@ reboot
 - Appearance > Lock Screen > Image > `/usr/share/backgrounds/canvas_by_roytanck.jpg`
 - Keyboard And Mouse > Mouse > Middle Click Paste > Off
 - Top bar > Clock > Date > Off
-
-### Customization
 
 #### Gnome extensions
 
