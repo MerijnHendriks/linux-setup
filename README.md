@@ -23,6 +23,7 @@ cd linux-setup
 # make scripts executables
 sudo chmod +x debloat-ubuntu.sh
 sudo chmod +x install-flatpaks.sh
+sudo chmod +x install-liquorix.sh
 sudo chmod +x install-clang.sh
 sudo chmod +x install-dotnet6.sh
 sudo chmod +x install-node18.sh
@@ -31,6 +32,7 @@ sudo chmod +x grub-hp.sh
 # run scripts
 sudo ./debloat-ubuntu.sh
 sudo ./install-flatpaks.sh
+sudo ./install-liquorix.sh
 sudo ./install-clang.sh
 sudo ./install-dotnet6.sh
 sudo ./install-node18.sh
