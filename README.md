@@ -94,6 +94,12 @@ X-GNOME-Autostart-enabled=false
 - Keyboard And Mouse > Mouse > Middle Click Paste > Off
 - Top bar > Clock > Date > Off
 
+#### Gnome Web
+
+- General > Homepage: Blank Page
+- General > Session > Restore tabs on startup: Off
+- General > Language > Spell checking: Off
+
 #### Gnome extensions
 
 **Name**                          | **Link**
