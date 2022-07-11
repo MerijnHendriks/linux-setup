@@ -58,17 +58,22 @@ reboot
 
 ### Tweaks
 
-#### Disable steam system tray
+#### gnome-control-center
 
-Source: [link](https://www.reddit.com/r/linux_gaming/comments/8r7iqt/how_to_solve_steam_not_minimizing_to_tray_when/)
-
-```sh
-nano ~/.bashrc
-```
-
-```txt
-export STEAM_FRAME_FORCE_CLOSE=1
-```
+- Bluetooth > Off
+- Appearance > Background > `/usr/share/backgrounds/canvas_by_roytanck.jpg`
+- Notifications > Lock Screen Notifications > Off
+- Search > Software > Off
+- Search > Terminal > Off
+- Privacy > File History & Trash > File History > Off
+- Privacy > File History & Trash > Automatically Delete Trash Content > On
+- Privacy > File History & Trash > Automatically Delete Temporary Files > On
+- Privacy > Screen > Blank Screen Delay > Never
+- Privacy > Screen > Automatic Screen Lock > Off
+- Power > Dim Screen > Off
+- Power > Automatic Suspend > Off
+- Display > Resolution > 1280x720
+- Removable Media > Never prompt or start programs on media insertion > On
 
 ### Customization
 
