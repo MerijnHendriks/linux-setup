@@ -138,7 +138,7 @@ Customize > Animation            | Disabled
 
 **Location**                                     | **Value**
 ------------------------------------------------ | -----------------
-Position > Thickness                             | 32
+Position > Thickness                             | 32px
 Position > Left box                              | Off
 Position > Center box                            | Off
 Position > Date Menu                             | Below system menu
