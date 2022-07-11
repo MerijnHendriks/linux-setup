@@ -8,7 +8,7 @@ My linux system install script and more
 
 ## Usage
 
-1. Install Ubuntu Desktop (minimal)
+1. Install Ubuntu Desktop
 2. Open terminal
 3. Execute the following:
 
