@@ -69,36 +69,50 @@ nano ~/.config/autostart/gnome-software-service.desktop
 X-GNOME-Autostart-enabled=false
 ```
 
-### Customization
+### Settings
+
+#### WPS
+
+**Location**                                | **Value**
+------------------------------------------- | ---------
+Settings > Skin Center                      | Comfort
+Ribbon > Hamburger > Ribbon Button Centered | On
+Ribbon > Hamburger > Ribbon Classic Menu    | Off
 
 #### Gnome Settings
 
-- Bluetooth: Off
-- Notifications > Lock Screen Notifications: Off
-- Search > Software: Off
-- Search > Terminal: Off
-- Privacy > File History & Trash > File History: Off
-- Privacy > File History & Trash > Automatically Delete Trash Content: On
-- Privacy > File History & Trash > Automatically Delete Temporary Files: On
-- Privacy > Screen > Blank Screen Delay: Never
-- Privacy > Screen > Automatic Screen Lock: Off
-- Power > Dim Screen: Off
-- Power > Automatic Suspend: Off
-- Display > Resolution: 1280x720
-- Removable Media > Never prompt or start programs on media insertion: On
+**Location**                                                          | **Value**
+--------------------------------------------------------------------- | ---------
+Bluetooth                                                             | Off
+Notifications > Lock Screen Notifications                             | Off
+Search > Software                                                     | Off
+Search > Terminal                                                     | Off
+Privacy > File History & Trash > File History                         | Off
+Privacy > File History & Trash > Automatically Delete Trash Content   | On
+Privacy > File History & Trash > Automatically Delete Temporary Files | On
+Privacy > Screen > Blank Screen Delay                                 | Never
+Privacy > Screen > Automatic Screen Lock                              | Off
+Power > Dim Screen                                                    | Off
+Power > Automatic Suspend                                             | Off
+Display > Resolution                                                  | 1280x720
+Removable Media > Never prompt or start programs on media insertion   | On
 
 #### Gnome tweaks
 
-- Appearance > Background > Image > `/usr/share/backgrounds/canvas_by_roytanck.jpg`
-- Appearance > Lock Screen > Image > `/usr/share/backgrounds/canvas_by_roytanck.jpg`
-- Keyboard And Mouse > Mouse > Middle Click Paste > Off
-- Top bar > Clock > Date > Off
+**Location**                                    | **Value**
+----------------------------------------------- | -----------------------------------------------
+Appearance > Background > Image                 | `/usr/share/backgrounds/canvas_by_roytanck.jpg`
+Appearance > Lock Screen > Image                | `/usr/share/backgrounds/canvas_by_roytanck.jpg`
+Keyboard And Mouse > Mouse > Middle Click Paste | Off
+Top bar > Clock > Date                          | Off
 
 #### Gnome Web
 
-- General > Homepage: Blank Page
-- General > Session > Restore tabs on startup: Off
-- General > Language > Spell checking: Off
+**Location**                                | **Value**
+------------------------------------------- | ----------
+General > Homepage                          | Blank Page
+General > Session > Restore tabs on startup | Off
+General > Language > Spell checking         | Off
 
 #### Gnome extensions
 
@@ -112,118 +126,27 @@ start overlay in application view | [link](https://extensions.gnome.org/extensio
 
 ##### Just perfection
 
-- Behaviour > Startup status: Desktop
-- Visibility > Events: Off
-- Visibility > Workspace switcher: Off
-- Visibility > Workspaces app grid: Off
-- Customize > Animation: Disabled
+**Location**                     | **Value**
+-------------------------------- | ---------
+Behaviour > Startup status       | Desktop
+Visibility > Events              | Off
+Visibility > Workspace switcher  | Off
+Visibility > Workspaces app grid | Off
+Customize > Animation            | Disabled
 
 ##### Dash to panel
 
-- Position > Thickness: 32
-- Position > Left box > Off
-- Position > Center box > Off
-- Position > Date Menu > Below system menu
-- Style > App icon margin > 2
-- Style > App icon padding > 6
-- Style > Override panel theme background opacity: On
-- Behaviour > Click empty space to close overview: On
-- Behaviour > Double Super to App Grid: Off
-- Behaviour > Isolate workspaces: On
-- Behaviour > Show tooltip on hover: Off
-- Fine-tune > Activate panel menu buttons on click only: On
-
-#### Gnome web
-
-- General > Homepage > Blank page
-- General > Search engine > Add search engine...
-
-```
-Name: Searx
-Address: https://searx.be/search?q=%s
-```
-
-- General > Check spelling > Off
-
-#### WPS
-
-- Settings > Skin Center > Comfort
-- Ribbon > Hamburger > Ribbon Button Centered > On
-- Ribbon > Hamburger > Ribbon Classic Menu > Off
-
-#### Atom extensions
-
-**Name**                | **Link**
------------------------ | -----------------------------------------------------------------------
-file-icons              | [link](https://atom.io/packages/file-icons)
-git-log                 | [link](https://atom.io/packages/git-log)
-platformio-ide-terminal | [link](https://atom.io/packages/platformio-ide-terminal)]
-
-#### Atom
-
-- Edit > Stylesheets
-
-```css
-# disable github statusbar
-.status-bar {
-  .![wallpaper](https://user-images.githubusercontent.com/54717671/174400642-c00ac3d4-32b3-421b-ab26-7d34994465b9.jpg)
-cursor-path, .github-StatusBarTile {
-    display: none;
-  }
-}
-```
-
-- Edit > Config
-
-```cson
-"*":
-  core:
-    disabledPackages: [
-      "archive-view"
-      "autocomplete-atom-api"
-      "autocomplete-css"
-      "autocomplete-html"
-      "autocomplete-plus"
-      "autocomplete-snippets"
-      "background-tips"
-      "bracket-matcher"
-      "deprecation-cop"
-      "exception-reporting"
-      "fuzzy-finder"
-      "go-to-line"
-      "language-clojure"
-      "language-coffee-script"
-      "language-go"
-      "language-java"
-      "language-less"
-      "language-mustache"
-      "language-objective-c"
-      "language-perl"
-      "language-php"
-      "language-property-list"
-      "language-python"
-      "language-ruby"
-      "language-ruby-on-rails"
-      "language-rust-bundled"
-      "language-sass"
-      "language-shellscript"
-      "language-sql"
-      "language-todo"
-      "language-toml"
-      "language-typescript"
-      "language-yaml"
-      "metrics"
-      "open-on-github"
-      "package-generator"
-      "snippets"
-      "spell-check"
-      "styleguide"
-      "symbols-view"
-      "timecop"
-      "welcome"
-      "about"
-    ]
-    telemetryConsent: "no"
-  welcome:
-    showOnStartup: false
-```
+**Location**                                     | **Value**
+------------------------------------------------ | -----------------
+Position > Thickness                             | 32
+Position > Left box                              | Off
+Position > Center box                            | Off
+Position > Date Menu                             | Below system menu
+Style > App icon margin                          | 2px
+Style > App icon padding                         | 6px
+Style > Override panel theme background opacity  | On
+Behaviour > Click empty space to close overview  | On
+Behaviour > Double Super to App Grid             | Off
+Behaviour > Isolate workspaces                   | On
+Behaviour > Show tooltip on hover                | Off
+Fine-tune > Activate panel menu buttons on click | On
