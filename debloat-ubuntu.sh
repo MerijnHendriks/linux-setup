@@ -20,6 +20,7 @@ rm -rf ~/snap /snap /var/snap /var/lib/snapd
 # remove apt software
 apt purge -y ubuntu-desktop            # full ubuntu desktop metapackage
 apt purge -y ubuntu-desktop-minimal    # minimal ubuntu desktop metapackage
+apt purge -y vim-common                # vim
 apt purge -y update-notifier           # software updater
 apt purge -y evince                    # documents viewer
 apt purge -y yelp                      # help
@@ -29,24 +30,36 @@ apt purge -y thunderbird               # email
 apt purge -y libreoffice-common        # libreoffice
 apt purge -y libreoffice-style-colibre # libreoffice colibre symbol style
 
-# remove system services
-apt purge -y whoopsie                       # error tracker submission
-apt purge -y apport                         # report malfunction to developers
-apt purge -y rygel                          # media sharing (upnp/dlna services)
-apt purge -y gnome-online-accounts          # online account settings
-apt purge -y xdg-desktop-portal             # flatpak/snapd desktop intergration
-apt purge -y network-manager-openvpn        # network manager openvpn
-apt purge -y network-manager-pptp           # network manager microsoft vpn
-apt purge -y mobile-broadband-provider-info # ...
-apt purge -y ppp                            # phone cable internet
-apt purge -y cups                           # printer drivers and services
-apt purge -y cups-pk-helper                 # printer drivers privileges manager
-apt purge -y gnome-control-center-faces     # configure profile picture face picture
-apt purge -y libcanberra-pulse              # pulseaudio backend for libcanberra (user login sound)
-apt purge -y orca                           # screen reader
-apt purge -y gnome-accessibility-themes     # high-constrast themes
-apt purge -y plymouth                       # boot screen animation
-apt purge -y ibus                           # multi-keyboard layout support
+# remove system parts
+apt purge -y whoopsie                          # error tracker submission
+apt purge -y apport                            # report malfunction to developers
+apt purge -y rygel                             # media sharing (upnp/dlna services)
+apt purge -y gnome-online-accounts             # online account settings
+apt purge -y xdg-desktop-portal                # flatpak/snapd desktop intergration
+apt purge -y network-manager-openvpn           # network manager openvpn
+apt purge -y network-manager-pptp              # network manager microsoft vpn
+apt purge -y mobile-broadband-provider-info    # ...
+apt purge -y ppp                               # phone cable internet
+apt purge -y cups-common                       # printer drivers and services
+apt purge -y cups-pk-helper                    # printer drivers privileges manager
+apt purge -y gnome-control-center-faces        # configure profile picture face picture
+apt purge -y libcanberra-pulse                 # pulseaudio backend for libcanberra (user login sound)
+apt purge -y orca                              # screen reader
+apt purge -y gnome-accessibility-themes        # high-constrast themes
+apt purge -y gnome-remote-desktop              # remote desktop daemon
+apt purge -y plymouth                          # boot screen animation
+apt purge -y ibus                              # multi-keyboard layout support
+apt purge -y ubuntu-release-upgrader-core      # release upgrader
+apt purge -y nautilus-sendto                   # nautilus send to context menu option
+apt purge -y nautilus-extension-gnome-terminal # nautillus open terminal here context menu option
+
+# remove fonts
+apt purge -y fonts-indic                        # indic
+apt purge -y fonts-liberation fonts-liberation2 # liberation
+apt purge -y fonts-noto-mono                    # noto mono
+apt purge -y fonts-droid-fallback               # droid
+apt purge -y fonts-urw-base35                   # postscript
+apt purge -y fonts-freefont-ttf                 # freefont
 
 # reinstall important stuff
 apt install -y --no-install-recommends linux-sound-base            # audio driver
