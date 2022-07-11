@@ -79,6 +79,20 @@ Settings > Skin Center                      | Comfort
 Ribbon > Hamburger > Ribbon Button Centered | On
 Ribbon > Hamburger > Ribbon Classic Menu    | Off
 
+#### Steam
+
+In-Game > Enable steam overlay while in-game | Off
+In-Game > Steam Networking                   | Never
+Interface > Steam window                     | Library
+Interface > Notify me...                     | Never
+Library > Interface                          | Small
+Library > Low bandwidth mode                 | On
+Library > Low performance mode               | On
+Broadcasting > Privacy setting               | Disabled
+Remote Play > Enable remote play             | Off
+Shader Pre-Caching > Allow background...     | On
+Steam Play > Enable steam play for other...  | On
+
 #### Software Properties
 
 **Location**                                                  | **Value**
