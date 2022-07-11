@@ -51,7 +51,6 @@ apt purge -y gnome-accessibility-themes     # high-constrast themes
 apt purge -y plymouth                       # boot screen animation
 apt purge -y ibus                           # multi-keyboard layout support
 apt purge -y libpam-fprintd                 # fingerprint authentication
-apt purge -y pulseaudio                     # audio frontend (gnome uses pipewire)
 
 # reinstall important stuff
 apt install -y --no-install-recommends linux-sound-base            # audio driver
@@ -68,7 +67,8 @@ apt install -y --no-install-recommends ubuntu-settings             # settings
 # reinstall yaru theme
 apt install -y --no-install-recommends yaru-theme-gnome-shell                # system theme
 apt install -y --no-install-recommends yaru-theme-gtk                        # window theme
-apt install -y --no-install-recommends yaru-theme-sound yaru-theme-icon      # system/apps icons teme
+apt install -y --no-install-recommends yaru-theme-sound yaru-theme-icon      # system/apps icons theme
+apt install -y --no-install-recommends ubuntu-sounds                         # sound theme
 gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'                # restore cursor theme to yaru
 
 # reinstall gnome extensions
