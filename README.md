@@ -81,6 +81,8 @@ Ribbon > Hamburger > Ribbon Classic Menu    | Off
 
 #### Steam
 
+**Location**                                 | **Value**
+-------------------------------------------- | ---------------------
 In-Game > Enable steam overlay while in-game | Off
 In-Game > Steam Networking                   | Never
 Interface > Steam window                     | Library
