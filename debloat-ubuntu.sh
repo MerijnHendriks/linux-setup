@@ -88,7 +88,7 @@ apt install -y --no-install-recommends gnome-shell-extension-appindicator     # 
 apt install -y --no-install-recommends gnome-shell-extension-desktop-icons-ng # desktop icons
 
 # tweak settings
-gsettings set org.gnome.software download-updates false # prevent gnome-software from running on startup
+sudo systemctl mask packagekit.service # prevent gnome-software from running on startup
 
 # remove remains
 apt autoremove -y --purge
