@@ -18,21 +18,16 @@ apt purge -y snapd
 rm -rf ~/snap /snap /var/snap /var/lib/snapd
 
 # remove apt software
-apt purge -y ubuntu-desktop           # full ubuntu desktop metapackage
-apt purge -y ubuntu-desktop-minimal   # minimal ubuntu desktop metapackage
-apt purge -y update-notifier          # software updater
-apt purge -y evince                   # documents viewer
-apt purge -y yelp                     # help
-apt purge -y gedit                    # text editor
-apt purge -y totem                    # videos
-apt purge -y thunderbird              # email
-apt purge -y libreoffice-common       # libreoffice common
-apt purge -y libreoffice-gnome        # libreoffice gnome intergration
-apt purge -y libreoffice-writer       # libreoffice writer
-apt purge -y libreoffice-calc         # libreoffice spreadsheats
-apt purge -y libreoffice-impress      # libreoffice presentation
-apt purge -y libreoffice-math         # libreoffice equation editor
-apt purge -y libreoffice-style-breeze # libreoffice breeze symbol style
+apt purge -y ubuntu-desktop            # full ubuntu desktop metapackage
+apt purge -y ubuntu-desktop-minimal    # minimal ubuntu desktop metapackage
+apt purge -y update-notifier           # software updater
+apt purge -y evince                    # documents viewer
+apt purge -y yelp                      # help
+apt purge -y gedit                     # text editor
+apt purge -y totem                     # videos
+apt purge -y thunderbird               # email
+apt purge -y libreoffice-common        # libreoffice
+apt purge -y libreoffice-style-colibre # libreoffice colibre symbol style
 
 # remove system services
 apt purge -y whoopsie                       # error tracker submission
