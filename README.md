@@ -79,6 +79,15 @@ Settings > Skin Center                      | Comfort
 Ribbon > Hamburger > Ribbon Button Centered | On
 Ribbon > Hamburger > Ribbon Classic Menu    | Off
 
+#### Software Properties
+
+**Location**                                                  | **Value**
+------------------------------------------------------------- | -------------------
+Ubuntu Software > Downloadable from the internet > Restricted | Off
+Ubuntu Software > Downloadable from the internet > Multiverse | Off
+Updates > Automatically check for updates                     | Never
+Updates > When there are security updates                     | Display immediately
+
 #### Gnome Settings
 
 **Location**                                                          | **Value**
