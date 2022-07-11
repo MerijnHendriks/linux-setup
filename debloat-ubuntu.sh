@@ -87,8 +87,5 @@ apt install -y --no-install-recommends gnome-shell-extension-ubuntu-dock      # 
 apt install -y --no-install-recommends gnome-shell-extension-appindicator     # desktop taskbar tray icons
 apt install -y --no-install-recommends gnome-shell-extension-desktop-icons-ng # desktop icons
 
-# tweak settings
-sudo systemctl mask packagekit.service # prevent gnome-software from running on startup
-
 # remove remains
 apt autoremove -y --purge
