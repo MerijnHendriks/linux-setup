@@ -5,7 +5,7 @@ apt update
 # remove snap, also implictly removes:
 # - firefox (snap package)
 # - gnome-software-plugin-snap
-# - gnome-software (because we remove the recommended snap plugin)
+# - gnome-software (because the recommended snap plugin is removed)
 snap remove firefox
 snap remove gtk-common-themes
 snap remove snap-store
@@ -15,7 +15,10 @@ snap remove core20
 snap remove bare
 snap remove snapd
 apt purge -y snapd
-rm -rf ~/snap /snap /var/snap /var/lib/snapd
+rm -rf /snap
+rm -rf /var/snap
+rm -rf /var/lib/snapd
+rm -rf ~/snap
 
 # remove apt software
 apt purge -y ubuntu-desktop             # full ubuntu desktop metapackage
