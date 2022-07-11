@@ -58,10 +58,9 @@ reboot
 
 ### Tweaks
 
-#### gnome-control-center
+#### Settings
 
 - Bluetooth > Off
-- Appearance > Background > `/usr/share/backgrounds/canvas_by_roytanck.jpg`
 - Notifications > Lock Screen Notifications > Off
 - Search > Software > Off
 - Search > Terminal > Off
@@ -74,6 +73,13 @@ reboot
 - Power > Automatic Suspend > Off
 - Display > Resolution > 1280x720
 - Removable Media > Never prompt or start programs on media insertion > On
+
+#### Gnome tweaks
+
+- Appearance > Background > Image > `/usr/share/backgrounds/canvas_by_roytanck.jpg`
+- Appearance > Lock Screen > Image > `/usr/share/backgrounds/canvas_by_roytanck.jpg`
+- Keyboard And Mouse > Mouse > Middle Click Paste > Off
+- Top bar > Clock > Date > Off
 
 ### Customization
 
@@ -133,23 +139,6 @@ start overlay in application view | [link](https://extensions.gnome.org/extensio
     ```
 - Users > Avatar > `$HOME/Pictures/Wallpapers/avatar.png`
 - Users > Automatic login > On
-
-#### Gnome tweaks
-
-- Appearance > Cursor > Yaru
-- Appearance > Icons > Fluent-dark
-- Appearance > Sound > Windows_10_sounds
-- Appearance > Background > Image > `$HOME/Pictures/Wallpapers/wallpaper.jpg`
-- Appearance > Lock Screen > Image > `$HOME/Pictures/Wallpapers/wallpaper.jpg`
-- Fonts > Interface Text > Inter Regular 11
-- Fonts > Document Text > Inter Regular 11
-- Fonts > Legacy Window Titles > Inter Regular 11
-- Fonts > Antialiasing > Subpixel
-- Keyboard And Mouse > Mouse > Middle Click Paste > Off
-- Keyboard And Mouse > Touchpad > Mouse Click Emulation > Area
-- Top bar > Clock > Date > Off
-- Window Titlebars > Maximize > On
-- Window Titlebars > Minimize > On
 
 #### Gnome web
 
