@@ -96,5 +96,8 @@ apt install -y --no-install-recommends gnome-shell-extension-desktop-icons-ng   
 rm /usr/share/applications/software-properties-drivers.desktop                   # additional drivers icon
 rm /usr/share/applications/gnome-language-selector.desktop                       # language support icon
 
+# update all packages
+apt full-upgrade
+
 # remove remains
 apt autoremove -y --purge
