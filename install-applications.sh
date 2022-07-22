@@ -16,5 +16,6 @@ apt install --no-install-recommends gnome-tweaks
  flatpak install -y flathub org.gnome.Builder
  flatpak install -y flathub com.discordapp.Discord
  flatpak install -y flathub com.wps.Office
+ flatpak install -y flathub com.spotify.Client
  flatpak install -y flathub com.valvesoftware.Steam
  flatpak install -y flathub com.github.Matoking.protontricks
