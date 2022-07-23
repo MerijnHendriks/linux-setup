@@ -135,10 +135,10 @@ Removable Media > Never prompt or start programs on media insertion   | On
 
 #### Gnome settings keyboard shortcuts
 
-**Location**                                                          | **Value**
---------------------------------------------------------------------- | ---------
-System > Show the overview | Super + Tab
-Screenshots > Take a screenshot interatively | Super + Shift + S
+**Location**                                  | **Value**
+--------------------------------------------- | -----------------
+System > Show the overview                    | Super + Tab
+Screenshots > Take a screenshot interactively | Super + Shift + S
 
 ##### Custom shortcuts
 
