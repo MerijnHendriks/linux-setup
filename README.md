@@ -133,6 +133,21 @@ Power > Automatic Suspend                                             | Off
 Display > Resolution                                                  | 1280x720
 Removable Media > Never prompt or start programs on media insertion   | On
 
+#### Gnome settings keyboard shortcuts
+
+**Location**                                                          | **Value**
+--------------------------------------------------------------------- | ---------
+System > Show the overview | Super + Tab
+Screenshots > Take a screenshot interatively | Super + Shift + S
+
+##### Custom shortcuts
+
+```
+name: Task manager
+command: gnome-system-monitor
+shortcut: Ctrl + Shift + Escape
+```
+
 #### Gnome tweaks
 
 **Location**                                    | **Value**
