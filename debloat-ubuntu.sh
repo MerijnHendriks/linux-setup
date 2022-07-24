@@ -30,6 +30,7 @@ apt purge -y evince                                                             
 apt purge -y yelp                                                                # help
 apt purge -y gedit                                                               # text editor
 apt purge -y totem                                                               # videos
+apt purge -y eog                                                                 # image viewer
 apt purge -y thunderbird                                                         # email
 apt purge -y libreoffice-common                                                  # libreoffice
 apt purge -y libreoffice-style-colibre                                           # libreoffice colibre symbol style
