@@ -23,3 +23,4 @@ flatpak install -y flathub com.wps.Office
 flatpak install -y flathub com.spotify.Client
 flatpak install -y flathub com.valvesoftware.Steam
 flatpak install -y flathub com.github.Matoking.protontricks
+flatpak install -y flathub com.usebottles.bottles
