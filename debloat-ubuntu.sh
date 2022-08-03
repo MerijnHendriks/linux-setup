@@ -93,6 +93,11 @@ apt install -y --no-install-recommends gnome-shell-extension-ubuntu-dock        
 apt install -y --no-install-recommends gnome-shell-extension-appindicator        # desktop taskbar tray icons
 apt install -y --no-install-recommends gnome-shell-extension-desktop-icons-ng    # desktop icons
 
+# reinstall ubuntu branding
+apt install -y --no-install-recommends plymouth                                  # boot splash
+apt install -y --no-install-recommends plymouth-theme-spinner                    # boot splash spinner
+apt install -y --no-install-recommends branding-ubuntu                           # replacement artwork
+
 # remove unused icons
 rm /usr/share/applications/software-properties-drivers.desktop                   # additional drivers icon
 rm /usr/share/applications/gnome-language-selector.desktop                       # language support icon
