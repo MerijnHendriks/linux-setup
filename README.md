@@ -64,6 +64,13 @@ reboot
 
 ### Settings
 
+#### Flatseal
+
+**Location**                       | **Value**
+---------------------------------- | ----------------------
+Discord > Filesystem > Other files | Add `xdg-documents:ro`
+WPS Office > Share > Network       | Off
+
 #### WPS
 
 **Location**                                | **Value**
