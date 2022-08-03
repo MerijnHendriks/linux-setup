@@ -60,16 +60,7 @@ reboot
 
 ### Tweaks
 
-#### Disable gnome-software from startup
-
-```sh
-cp /etc/xdg/autostart/gnome-software-service.desktop ~/.config/autostart
-nano ~/.config/autostart/gnome-software-service.desktop 
-```
-
-```txt
-X-GNOME-Autostart-enabled=false
-```
+...
 
 ### Settings
 
