@@ -178,13 +178,14 @@ start overlay in application view | [link](https://extensions.gnome.org/extensio
 
 ##### Just perfection
 
-**Location**                     | **Value**
--------------------------------- | ---------
-Behaviour > Startup status       | Desktop
-Visibility > Events              | Off
-Visibility > Workspace switcher  | Off
-Visibility > Workspaces app grid | Off
-Customize > Animation            | Disabled
+**Location**                         | **Value**
+------------------------------------ | ---------
+Behaviour > Startup status           | Desktop
+Behaviour > Double Super to App Grid | Off
+Visibility > Events                  | Off
+Visibility > Workspace switcher      | Off
+Visibility > Workspaces app grid     | Off
+Customize > Animation                | Disabled
 
 ##### Dash to panel
 
@@ -198,7 +199,7 @@ Style > App icon margin                          | 2px
 Style > App icon padding                         | 6px
 Style > Override panel theme background opacity  | On
 Behaviour > Click empty space to close overview  | On
-Behaviour > Double Super to App Grid             | Off
+Behaviour > Isolate monitors                     | On
 Behaviour > Isolate workspaces                   | On
 Behaviour > Show tooltip on hover                | Off
 Fine-tune > Activate panel menu buttons on click | On
