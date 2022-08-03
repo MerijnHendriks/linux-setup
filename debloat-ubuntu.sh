@@ -98,12 +98,15 @@ apt install -y --no-install-recommends plymouth                                 
 apt install -y --no-install-recommends plymouth-theme-spinner                    # boot splash spinner
 apt install -y --no-install-recommends branding-ubuntu                           # replacement artwork
 
+# update all packages
+apt dist-upgrade -y
+
 # remove unused icons
 rm /usr/share/applications/software-properties-drivers.desktop                   # additional drivers icon
 rm /usr/share/applications/gnome-language-selector.desktop                       # language support icon
 
-# update all packages
-apt dist-upgrade -y
+# disable autostart
+rm /etc/xdg/autostart/gnome-software-service.desktop                             # software
 
 # remove remains
 apt autoremove -y --purge
