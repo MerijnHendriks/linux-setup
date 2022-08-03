@@ -170,6 +170,7 @@ General > Language > Spell checking         | Off
 **Name**                          | **Link**
 ----------------------------------| -----------------------------------------------------------------------
 appindicator                      | [link](https://extensions.gnome.org/extension/615/appindicator-support)
+blur my shell                     | [link](https://extensions.gnome.org/extension/3193/blur-my-shell/)
 dash to panel                     | [link](https://extensions.gnome.org/extension/1160/dash-to-panel)
 just perfection                   | [link](https://extensions.gnome.org/extension/3843/just-perfection)
 refresh wifi connections          | [link](https://extensions.gnome.org/extension/905/refresh-wifi-connections)
