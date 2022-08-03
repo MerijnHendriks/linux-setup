@@ -104,6 +104,12 @@ Remote Play > Enable remote play             | Off
 Shader Pre-Caching > Allow background...     | On
 Steam Play > Enable steam play for other...  | On
 
+#### Gnome Software
+
+**Location**      | **Value**
+----------------- | ---------------------
+Automatic updates | Off
+
 #### Software Properties
 
 **Location**                                                  | **Value**
