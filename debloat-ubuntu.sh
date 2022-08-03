@@ -98,7 +98,7 @@ rm /usr/share/applications/software-properties-drivers.desktop                  
 rm /usr/share/applications/gnome-language-selector.desktop                       # language support icon
 
 # update all packages
-apt full-upgrade
+apt full-upgrade -y
 
 # remove remains
 apt autoremove -y --purge
