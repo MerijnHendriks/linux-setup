@@ -163,6 +163,21 @@ Appearance > Lock Screen > Image                | `/usr/share/backgrounds/canvas
 Keyboard And Mouse > Mouse > Middle Click Paste | Off
 Top bar > Clock > Date                          | Off
 
+#### Gnome system monitor
+
+**Location**                                      | **Value**
+------------------------------------------------- | -----------------------------------------------
+Processes > Behaviour > Alert before ...          | Off
+Processes > Information Fields > User             | Off
+Processes > Information Fields > ID               | Off
+Processes > Information Fields > Disk read total  | Off
+Processes > Information Fields > Disk write total | Off
+Processes > Information Fields > Disk read        | Off
+Processes > Information Fields > Disk write       | Off
+Resources > Graphs > Chart data points            | 30
+Resources > Graphs > Draw CPU chart as ...        | On
+File System > Information Fields > Available      | Off
+
 #### Gnome Web
 
 **Location**                                | **Value**
