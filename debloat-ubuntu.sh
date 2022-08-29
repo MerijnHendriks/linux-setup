@@ -89,14 +89,14 @@ apt install -y --no-install-recommends fonts-ubuntu fonts-ubuntu-console        
 gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'                    # restore cursor theme to yaru
 
 # reinstall gnome extensions
-apt install -y --no-install-recommends gnome-shell-extension-ubuntu-dock         # desktop taskbar
-apt install -y --no-install-recommends gnome-shell-extension-appindicator        # desktop taskbar tray icons
-apt install -y --no-install-recommends gnome-shell-extension-desktop-icons-ng    # desktop icons
+# apt install -y --no-install-recommends gnome-shell-extension-ubuntu-dock       # desktop taskbar
+# apt install -y --no-install-recommends gnome-shell-extension-appindicator      # desktop taskbar tray icons
+# apt install -y --no-install-recommends gnome-shell-extension-desktop-icons-ng  # desktop icons
 
 # reinstall ubuntu branding
-apt install -y --no-install-recommends plymouth                                  # boot splash
-apt install -y --no-install-recommends plymouth-theme-spinner                    # boot splash spinner
-apt install -y --no-install-recommends branding-ubuntu                           # replacement artwork
+# apt install -y --no-install-recommends plymouth                                # boot splash
+# apt install -y --no-install-recommends plymouth-theme-spinner                  # boot splash spinner
+# apt install -y --no-install-recommends branding-ubuntu                         # replacement artwork
 
 # update all packages
 apt dist-upgrade -y
@@ -106,7 +106,7 @@ rm /usr/share/applications/software-properties-drivers.desktop                  
 rm /usr/share/applications/gnome-language-selector.desktop                       # language support icon
 
 # disable autostart
-rm /etc/xdg/autostart/gnome-software-service.desktop                             # software
+rm /etc/xdg/autostart/gnome-software-service.desktop                             # software (update in background service)
 
 # remove remains
 apt autoremove -y --purge
