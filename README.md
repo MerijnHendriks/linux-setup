@@ -191,19 +191,27 @@ General > Language > Spell checking         | Off
 appindicator                      | [link](https://extensions.gnome.org/extension/615/appindicator-support)
 blur my shell                     | [link](https://extensions.gnome.org/extension/3193/blur-my-shell/)
 dash to panel                     | [link](https://extensions.gnome.org/extension/1160/dash-to-panel)
+arcmenu                           | [link](https://extensions.gnome.org/extension/3628/arcmenu)
 just perfection                   | [link](https://extensions.gnome.org/extension/3843/just-perfection)
 refresh wifi connections          | [link](https://extensions.gnome.org/extension/905/refresh-wifi-connections)
 start overlay in application view | [link](https://extensions.gnome.org/extension/5040/start-overlay-in-application-view)
+
+Note:
+
+ArcMenu requires the following:
+
+```
+sudo apt install --no-install-recommends gir1.2-gmenu-3.0
+```
 
 ##### Just perfection
 
 **Location**                         | **Value**
 ------------------------------------ | ---------
 Behaviour > Startup status           | Desktop
-Behaviour > Double Super to App Grid | Off
 Visibility > Events                  | Off
-Visibility > Workspace switcher      | Off
-Visibility > Workspaces app grid     | Off
+Visibility > System Menu             | Off
+Visibility > Weather                 | Off
 Customize > Animation                | Disabled
 
 ##### Dash to panel
@@ -211,7 +219,7 @@ Customize > Animation                | Disabled
 **Location**                                     | **Value**
 ------------------------------------------------ | -----------------
 Position > Thickness                             | 32px
-Position > Left box                              | Off
+Position > Show Applications Button              | Off
 Position > Center box                            | Off
 Position > Date Menu                             | Below system menu
 Style > App icon margin                          | 2px
@@ -222,3 +230,22 @@ Behaviour > Isolate monitors                     | On
 Behaviour > Isolate workspaces                   | On
 Behaviour > Show tooltip on hover                | Off
 Fine-tune > Activate panel menu buttons on click | On
+
+##### ArcMenu
+
+**Location**                                          | **Value**
+----------------------------------------------------- | -----------------------------
+General > Display on all Panels                       | On
+General > Menu Hotkey                                 | Left Super Key
+Layout                                                | Modern Menu Layouts > Windows
+Layout > Windows > Disable Frequent Apps              | On
+Layout > Windows > Disable Pinned Apps                | On
+Customize > Menu Settings > Height                    | 450
+Customize > Button Settings > Icon                    | <Whatever>
+Customize > Power Options > Lock                      | Off
+Customize > Power Options > Log Out                   | Off
+Customize > Power OPtions > Display Style             | Inline
+Customize > Fine-Tune > Disable ScollView Fade Effect | On
+Customize > Fine-Tune > Disable Tooltip               | On
+Customize > Fine-Tune > Alphabetize All Programs      | Off
+Customize > Fine-Tune > Disable New Apps Tracker      | On
