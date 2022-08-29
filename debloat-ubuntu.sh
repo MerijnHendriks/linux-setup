@@ -76,7 +76,7 @@ apt install -y --no-install-recommends gnome-shell-extension-prefs              
 apt install -y --no-install-recommends gnome-terminal                            # terminal
 apt install -y --no-install-recommends gnome-system-monitor                      # system monitor
 apt install -y --no-install-recommends gnome-bluetooth                           # bluetooth
-apt install -y --no-install-recommends gnome-software                            # software
+# apt install -y --no-install-recommends gnome-software                          # software
 apt install -y --no-install-recommends nautilus                                  # files
 apt install -y --no-install-recommends ubuntu-settings                           # settings
 
@@ -102,11 +102,11 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'                   
 apt dist-upgrade -y
 
 # remove unused icons
-rm /usr/share/applications/software-properties-drivers.desktop                   # additional drivers icon
+# rm /usr/share/applications/software-properties-drivers.desktop                 # additional drivers icon
 rm /usr/share/applications/gnome-language-selector.desktop                       # language support icon
 
 # disable autostart
-rm /etc/xdg/autostart/gnome-software-service.desktop                             # software (update in background service)
+# rm /etc/xdg/autostart/gnome-software-service.desktop                           # software (update in background service)
 
 # remove remains
 apt autoremove -y --purge
