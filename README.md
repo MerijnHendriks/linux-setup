@@ -223,7 +223,7 @@ Customize > Animation                | Disabled
 Position > Thickness                             | 32px
 Position > Show Applications Button              | Off
 Position > Center box                            | Off
-Position > Date Menu                             | Below system menu
+Position > System Menu                           | Off
 Style > App icon margin                          | 2px
 Style > App icon padding                         | 6px
 Style > Override panel theme background opacity  | On
