@@ -106,6 +106,15 @@ Remote Play > Enable remote play             | Off
 Shader Pre-Caching > Allow background...     | On
 Steam Play > Enable steam play for other...  | On
 
+#### Blackbox
+
+**Location**                            | **Value**
+--------------------------------------- | ---------
+General > Window > Remember Window Size | On
+General > Window > Show Borders         | Off
+General > Window > Theme Intergration   | Off
+Terminal > Easy Copy & Paste            | On
+
 #### Gnome Software
 
 **Location**      | **Value**
