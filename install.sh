@@ -1,12 +1,32 @@
 #!/bin/bash
 
-# update ppa cache
+# ----- NOTES -----
+# Couple of assumptions in this script;
+# - Ubuntu mirror is https://nl.archive.ubuntu.com
+# - You only need outgoing DNS + HTTPS
+# - Don't want the vanilla ubuntu experience
+
+# ---- HARDENING -----
+
+# Use apt over https
+sed --in-place --regexp-extended 's http://(nl\.archive\.ubuntu\.com|security\.ubuntu\.com) https://nl.archive.ubuntu.com g' /etc/apt/sources.list
+
+# Enable firewall
+ufw default deny incoming                                                        # disable all incoming ports
+ufw default deny outgoing                                                        # allow all outgoing ports
+ufw allow out to any port 53                                                     # allow outgoing dns
+ufw allow out to any port 443                                                    # allow outgoing https
+ufw enable                                                                       # turn on the firewall
+ufw reload                                                                       # enable all rules
+
+# Refresh package list
 apt update
+
+# ----- DEBLOAT -----
 
 # remove snap, also implictly removes:
 # - firefox (snap package)
-# - gnome-software-plugin-snap
-# - gnome-software (because the recommended snap plugin is removed)
+# - gnome-software (because gnome-software-plugin-snap is removed)
 snap remove firefox
 snap remove gtk-common-themes
 snap remove snap-store
@@ -19,9 +39,9 @@ apt purge -y snapd
 rm -rf /snap
 rm -rf /var/snap
 rm -rf /var/lib/snapd
-rm -rf ~/snap
+rm -rf snap
 
-# remove apt software
+# remove apt packages
 apt purge -y ubuntu-desktop                                                      # full ubuntu desktop metapackage
 apt purge -y ubuntu-desktop-minimal                                              # minimal ubuntu desktop metapackage
 apt purge -y vim-common                                                          # vim
@@ -36,8 +56,6 @@ apt purge -y libreoffice-common                                                 
 apt purge -y libreoffice-style-colibre                                           # libreoffice colibre symbol style
 apt purge -y gnome-startup-applications                                          # startup application manager
 apt purge -y network-manager-gnome                                               # advanced network configuration
-
-# remove system parts
 apt purge -y whoopsie                                                            # error tracker submission
 apt purge -y apport                                                              # report malfunction to developers
 apt purge -y rygel                                                               # media sharing (upnp/dlna services)
@@ -59,54 +77,65 @@ apt purge -y ibus                                                               
 apt purge -y ubuntu-release-upgrader-core                                        # release upgrader
 apt purge -y nautilus-sendto                                                     # nautilus send to context menu option
 apt purge -y nautilus-extension-gnome-terminal                                   # nautillus open terminal here context menu option
+apt purge -y pulseaudio                                                          # audio
+apt purge -y fonts-indic                                                         # font indic
+apt purge -y fonts-liberation fonts-liberation2                                  # font liberation
+apt purge -y fonts-noto-mono                                                     # font noto mono
+apt purge -y fonts-droid-fallback                                                # font droid
+apt purge -y fonts-urw-base35                                                    # font postscript
+apt purge -y fonts-freefont-ttf                                                  # font freefont
 
-# remove fonts
-apt purge -y fonts-indic                                                         # indic
-apt purge -y fonts-liberation fonts-liberation2                                  # liberation
-apt purge -y fonts-noto-mono                                                     # noto mono
-apt purge -y fonts-droid-fallback                                                # droid
-apt purge -y fonts-urw-base35                                                    # postscript
-apt purge -y fonts-freefont-ttf                                                  # freefont
-
-# reinstall important stuff
+# reinstall apt packages
 apt install -y --no-install-recommends linux-sound-base                          # audio driver
-apt install -y --no-install-recommends acpi-support                              # acpi event support for certain devices
 apt install -y --no-install-recommends gnome-session gdm3                        # gnome 42 core
 apt install -y --no-install-recommends gnome-shell-extension-prefs               # gnome extensions system
-apt install -y --no-install-recommends gnome-terminal                            # terminal
 apt install -y --no-install-recommends gnome-system-monitor                      # system monitor
 apt install -y --no-install-recommends gnome-bluetooth                           # bluetooth
-# apt install -y --no-install-recommends gnome-software                          # software
 apt install -y --no-install-recommends nautilus                                  # files
 apt install -y --no-install-recommends ubuntu-settings                           # settings
+apt install -y --no-install-recommends yaru-theme-gnome-shell                    # theme system
+apt install -y --no-install-recommends yaru-theme-gtk                            # theme window
+apt install -y --no-install-recommends yaru-theme-sound yaru-theme-icon          # theme system/apps icons
+apt install -y --no-install-recommends ubuntu-sounds                             # theme sound
+apt install -y --no-install-recommends fonts-ubuntu fonts-ubuntu-console         # theme system fonts
 
-# reinstall yaru theme
-apt install -y --no-install-recommends yaru-theme-gnome-shell                    # system theme
-apt install -y --no-install-recommends yaru-theme-gtk                            # window theme
-apt install -y --no-install-recommends yaru-theme-sound yaru-theme-icon          # system/apps icons theme
-apt install -y --no-install-recommends ubuntu-sounds                             # sound theme
-apt install -y --no-install-recommends fonts-ubuntu fonts-ubuntu-console         # system fonts
-gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'                    # restore cursor theme to yaru
-
-# reinstall gnome extensions
-# apt install -y --no-install-recommends gnome-shell-extension-ubuntu-dock       # desktop taskbar
-# apt install -y --no-install-recommends gnome-shell-extension-appindicator      # desktop taskbar tray icons
-# apt install -y --no-install-recommends gnome-shell-extension-desktop-icons-ng  # desktop icons
-
-# reinstall ubuntu branding
-# apt install -y --no-install-recommends plymouth                                # boot splash
-# apt install -y --no-install-recommends plymouth-theme-spinner                  # boot splash spinner
-# apt install -y --no-install-recommends branding-ubuntu                         # replacement artwork
-
-# update all packages
-apt dist-upgrade -y
+# reinstall settings
+gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'                    # theme restore cursor to yaru
 
 # remove unused icons
-# rm /usr/share/applications/software-properties-drivers.desktop                 # additional drivers icon
 rm /usr/share/applications/gnome-language-selector.desktop                       # language support icon
 
-# disable autostart
-# rm /etc/xdg/autostart/gnome-software-service.desktop                           # software (update in background service)
-
-# remove remains
+# remove all leftover files
 apt autoremove -y --purge
+apt dist-upgrade -y
+
+# ----- INSTALL -----
+
+# bluetooth codecs
+apt install -y --no-install-recommends libldacbt-{abr,enc}2
+
+# pipewire
+apt install -y --no-install-recommends libspa-0.2-bluetooth pipewire-audio-client-libraries pipewire-media-session- wireplumber
+cp /usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d/
+cp /usr/share/doc/pipewire/examples/ld.so.conf.d/pipewire-jack-*.conf /etc/ld.so.conf.d/
+systemctl --user --now enable wireplumber.service
+
+# flatpak
+apt install -y --no-install-recommends flatpak xdg-desktop-portal-gtk xdg-desktop-portal-gnome
+ 
+# flathub
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak update --appstream
+
+# flatpak applications
+flatpak install -y flathub com.github.tchx84.Flatseal
+flatpak install -y flathub com.mattjakeman.ExtensionManager
+flatpak install -y flathub com.raggesilver.BlackBox
+flatpak install -y flathub org.gnome.FileRoller
+flatpak install -y flathub org.gnome.Epiphany
+flatpak install -y flathub org.gnome.TextEditor
+flatpak install -y flathub org.gnome.eog
+flatpak install -y flathub io.github.celluloid_player.Celluloid
+flatpak install -y flathub com.wps.Office
+flatpak install -y flathub com.valvesoftware.Steam
+flatpak install -y flathub com.github.Matoking.protontricks

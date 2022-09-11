@@ -16,41 +16,11 @@ My linux system install script and more
 # install requirements
 sudo apt install --no-install-recommends git
 
-# download script
+# download and run script
 git clone https://github.com/merijnhendriks/linux-setup
 cd linux-setup
-
-# make scripts executables
-sudo chmod +x debloat-ubuntu.sh
-sudo chmod +x install-flatpaks.sh
-sudo chmod +x install-pipewire.sh
-sudo chmod +x enable-firewall.sh
-sudo chmod +x install-liquorix.sh
-sudo chmod +x install-thumbnails.sh
-sudo chmod +x install-clang.sh
-sudo chmod +x install-dotnet6.sh
-sudo chmod +x install-node18.sh
-sudo chmod +x grub-hp.sh
-
-# run scripts
-sudo ./debloat-ubuntu.sh
-sudo ./install-flatpaks.sh
-sudo ./install-pipewire.sh
-sudo ./enable-firewall.sh
-sudo ./install-liquorix.sh
-sudo ./install-thumbnails.sh
-sudo ./install-clang.sh
-sudo ./install-dotnet6.sh
-sudo ./install-node18.sh
-
-# set grub theme
-sudo ./grub-hp.sh
-sudo nano /etc/default/grub
-# GRUB_CMDLINE_LINUX_DEFAULT="quiet nosplash"
-# GRUB_CMDLINE_LINUX="console=tty12"
-# GRUB_GFXMODE=1920x1080
-# GRUB_THEME=/boot/grub/themes/hp/theme.txt
-sudo update-grub
+sudo chmod +x install.sh
+sudo ./install.sh
 
 # cleanup
 cd ..
@@ -64,7 +34,14 @@ reboot
 
 ### Tweaks
 
-...
+#### Disable console on boot
+
+```sh
+sudo nano /etc/default/grub
+# GRUB_CMDLINE_LINUX_DEFAULT="quiet nosplash"
+# GRUB_CMDLINE_LINUX="console=tty12"
+sudo update-grub
+```
 
 ### Settings
 
