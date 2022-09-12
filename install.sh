@@ -8,19 +8,8 @@
 
 # ---- HARDENING -----
 
-# Use apt over https
+# use apt over https
 sed --in-place --regexp-extended 's http://(nl\.archive\.ubuntu\.com|security\.ubuntu\.com) https://nl.archive.ubuntu.com g' /etc/apt/sources.list
-
-# Enable firewall
-ufw default deny incoming                                                        # disable all incoming ports
-ufw default deny outgoing                                                        # allow all outgoing ports
-ufw allow out to any port 53                                                     # allow outgoing dns
-ufw allow out to any port 443                                                    # allow outgoing https
-ufw enable                                                                       # turn on the firewall
-ufw reload                                                                       # enable all rules
-
-# Refresh package list
-apt update
 
 # ----- DEBLOAT -----
 
@@ -44,6 +33,8 @@ rm -rf snap
 # remove apt packages
 apt purge -y ubuntu-desktop                                                      # full ubuntu desktop metapackage
 apt purge -y ubuntu-desktop-minimal                                              # minimal ubuntu desktop metapackage
+apt purge -y ubuntu-standard                                                     # standard ubuntu system metapackage
+apt purge -y ubuntu-advantage-tools                                              # ubuntu advantage service
 apt purge -y vim-common                                                          # vim
 apt purge -y update-notifier                                                     # software updater
 apt purge -y evince                                                              # documents viewer
@@ -78,12 +69,19 @@ apt purge -y ubuntu-release-upgrader-core                                       
 apt purge -y nautilus-sendto                                                     # nautilus send to context menu option
 apt purge -y nautilus-extension-gnome-terminal                                   # nautillus open terminal here context menu option
 apt purge -y pulseaudio                                                          # audio
+apt purge -y ntfs-3g                                                             # ntfs drive support
+apt purge -y sane-airscan sane-utils                                             # document scanner
+apt purge -y switcheroo-control                                                  # dual-gpu control
+apt purge -y openssh-client                                                      # openssh
 apt purge -y fonts-indic                                                         # font indic
 apt purge -y fonts-liberation fonts-liberation2                                  # font liberation
 apt purge -y fonts-noto-mono                                                     # font noto mono
 apt purge -y fonts-droid-fallback                                                # font droid
 apt purge -y fonts-urw-base35                                                    # font postscript
 apt purge -y fonts-freefont-ttf                                                  # font freefont
+
+# refresh package list
+apt update
 
 # reinstall apt packages
 apt install -y --no-install-recommends linux-sound-base                          # audio driver
@@ -93,6 +91,7 @@ apt install -y --no-install-recommends gnome-system-monitor                     
 apt install -y --no-install-recommends gnome-bluetooth                           # bluetooth
 apt install -y --no-install-recommends nautilus                                  # files
 apt install -y --no-install-recommends ubuntu-settings                           # settings
+apt install -y --no-install-recommends ufw                                       # firewall
 apt install -y --no-install-recommends yaru-theme-gnome-shell                    # theme system
 apt install -y --no-install-recommends yaru-theme-gtk                            # theme window
 apt install -y --no-install-recommends yaru-theme-sound yaru-theme-icon          # theme system/apps icons
@@ -108,6 +107,16 @@ rm /usr/share/applications/gnome-language-selector.desktop                      
 # remove all leftover files
 apt autoremove -y --purge
 apt dist-upgrade -y
+
+# ----- CONFIGURE -----
+
+# enable firewall
+ufw default deny incoming                                                        # disable all incoming ports
+ufw default deny outgoing                                                        # allow all outgoing ports
+ufw allow out to any port 53                                                     # allow outgoing dns
+ufw allow out to any port 443                                                    # allow outgoing https
+ufw enable                                                                       # turn on the firewall
+ufw reload                                                                       # reload all rules
 
 # ----- INSTALL -----
 
