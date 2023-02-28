@@ -110,10 +110,6 @@ apt dist-upgrade -y
 
 # ----- CONFIGURE -----
 
-# stop services
-systemctl stop systemd-resolved
-systemctl disable systemd-resolved
-
 # enable firewall
 ufw default deny incoming                                                        # disable all incoming ports
 ufw default deny outgoing                                                        # allow all outgoing ports
