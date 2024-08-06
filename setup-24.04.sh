@@ -1,12 +1,13 @@
 # Get admin rights
 sudo -i
 
-# force apt over https
-apt install --no-install-recommends apt-transport-https
-
 # Refresh apt remote indexes
 apt update
+
+# APT over HTTPS (note: change remote to yours)
+apt install --no-install-recommends apt-transport-https
 sed -i 's|http://nl.archive.ubuntu.com|https://nl.archive.ubuntu.com|' /etc/apt/sources.list.d/*.list
+apt update
 
 # DNS-over-HTTPS
 apt install --no-install-recommends dnss
@@ -70,15 +71,15 @@ flatpak install org.gnome.Logs                         # logs
 flatpak install com.github.tchx84.Flatseal             # flatpak permission manager
 flatpak install com.mattjakeman.ExtensionManager       # gnome extensions manager
 flatpak install org.mozilla.firefox                    # web browser
-flatpak install flathub io.missioncenter.MissionCenter # system monitor
+flatpak install io.missioncenter.MissionCenter         # system monitor
 
 # Install personal apps
-apt install --no-install-recommends git steam-devices dotnet-sdk-8.0 dotnet-host-8.0
-flatpak install flathub com.valvesoftware.Steam
-flatpak install flathub org.gnome.World.Secrets
-flatpak install flathub com.usebottles.bottles
-flatpak install flathub com.visualstudio.code
-flatpak install flathub org.freedesktop.Sdk.Extension.dotnet
+apt install --no-install-recommends git steam-devices dotnet-sdk-8.0
+flatpak install com.valvesoftware.Steam
+flatpak install com.github.Matoking.protontricks
+flatpak install org.gnome.World.Secrets
+flatpak install com.usebottles.bottles
+flatpak install dev.zed.Zed
 
 # Configure control center
 # 1. Network
