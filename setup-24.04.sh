@@ -72,6 +72,7 @@ flatpak install com.github.tchx84.Flatseal             # flatpak permission mana
 flatpak install com.mattjakeman.ExtensionManager       # gnome extensions manager
 flatpak install org.mozilla.firefox                    # web browser
 flatpak install io.missioncenter.MissionCenter         # system monitor
+flatpak install org.gnome.FileRoller                   # compressed file extractor
 
 # Install personal apps
 apt install --no-install-recommends git steam-devices dotnet-sdk-8.0
